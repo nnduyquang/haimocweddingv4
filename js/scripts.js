@@ -1,6 +1,6 @@
 var plugins = {
     menuSideBar: $('.sidebar'),
-    slider: $('#slider'),
+    sliderCarousel:$('.slider-carousel'),
 };
 $(document).ready(function () {
     function sidebar() {
@@ -18,16 +18,13 @@ $(document).ready(function () {
         })
     }
     sidebar();
-    function runSlider() {
-        plugins.slider.nivoSlider({
-            effect: 'fade',
-            animSpeed: 500,
-            pauseTime: 3000,
-            pauseOnHover: true,
-            controlNav: false,
+    function runSliderCarousel(){
+        plugins.sliderCarousel.carousel({
+            interval: 8000,
+            pause:false
         });
     }
-    if (plugins.slider.length) {
-        runSlider();
+    if(plugins.sliderCarousel.length){
+        runSliderCarousel();
     }
 });
