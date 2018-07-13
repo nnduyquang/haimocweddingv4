@@ -33,6 +33,7 @@ mix
     //CSS CORE FRONTEND
     .styles([
         'bower_components/nivo-slider/nivo-slider.css',
+        'bower_components/animate.css/animate.min.css'
     ], '../css/core.frontend.css')
     //CSS CORE BACKEND
     .styles([

@@ -1,6 +1,7 @@
 var plugins = {
     menuSideBar: $('.sidebar'),
     sliderCarousel:$('.slider-carousel'),
+    menuTop:$('#menu')
 };
 $(document).ready(function () {
     function sidebar() {
@@ -18,6 +19,19 @@ $(document).ready(function () {
         })
     }
     sidebar();
+    function fixOnScroll() {
+        var menuScroll = plugins.menuTop
+        $(window).on("scroll", function (e) {
+            if ($(this).scrollTop() > 30) {
+                menuScroll.addClass('fadeInDown background-menu fixed-top');
+                menuScroll.removeClass('show-on-slide fadeInUp');
+            } else {
+                menuScroll.removeClass('fixed-top  fadeInDown background-menu');
+                menuScroll.addClass('show-on-slide  fadeInUp');
+            }
+        });
+    }
+    fixOnScroll();
     function runSliderCarousel(){
         plugins.sliderCarousel.carousel({
             interval: 8000,

@@ -26,9 +26,8 @@
     @yield('container')
 </div>
 @include('frontend.common.menu.m-sidebar')
-<div class="footer">
-    @include('frontend.common.footer')
-</div>
+@include('frontend.common.footer')
+
 {{ Html::script('js/core.common.js') }}
 {{ Html::script('js/core.frontend.js') }}
 <script type="text/javascript">

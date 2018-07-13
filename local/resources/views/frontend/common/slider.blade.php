@@ -2,8 +2,8 @@
     <div id="carouselExampleControls" class="carousel slide carousel-fade slider-carousel" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="edit-slide">
-                    {{ Html::image('images/slider/slider2/slider1.jpg','',array('class'=>'main-slider')) }}
+                <div class="edit-slide slider1" style="background:url('{{URL::to('images/slider/slider2/slider1.jpg')}}')">
+                    {{--{{ Html::image('images/slider/slider2/slider1.jpg','',array('class'=>'main-slider')) }}--}}
                     {{--<div class="container" style="position: relative">--}}
                         {{--<div class="test-slide center-text">--}}
                             {{--<h2 class="animated fadeInLeft">KHỞI TẠO CHIẾN DỊCH <br> <span style="color: #00AFEF">MARKETING ONLINE</span>--}}
@@ -20,8 +20,8 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="edit-slide">
-                    {{ Html::image('images/slider/slider2/slider2.jpg','',array('class'=>'main-slider')) }}
+                <div class="edit-slide slider2" style="background:url('{{URL::to('images/slider/slider2/slider2.jpg')}}')">
+                    {{--{{ Html::image('images/slider/slider2/slider2.jpg','',array('class'=>'main-slider')) }}--}}
                     {{--<div class="container" style="position: relative">--}}
                         {{--<div class="test-slide center-text">--}}
                             {{--<h2 class="animated fadeInLeft">CÔNG TY QUẢNG CÁO<br> TRỰC TUYẾN</h2>--}}
@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="edit-slide" style="position: relative">
-                    {{ Html::image('images/slider/slider2/slider3.jpg','',array('class'=>'main-slider')) }}
+                <div class="edit-slide slider3" style="background:url('{{URL::to('images/slider/slider2/slider3.jpg')}}')">
+                    {{--{{ Html::image('images/slider/slider2/slider3.jpg','',array('class'=>'main-slider')) }}--}}
                     {{--<div class="container" style="position: relative">--}}
                         {{--<div class="test-slide center-text">--}}
                             {{--<h2 class="animated fadeInLeft">BỨC PHÁ DOANH THU<br>CÙNG SMARTLINKS</h2>--}}

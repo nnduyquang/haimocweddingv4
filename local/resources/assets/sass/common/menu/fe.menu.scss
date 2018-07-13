@@ -2,22 +2,39 @@
   position: absolute;
   z-index: 99;
   width: 100%;
+  transition: all 0.5s;
+  &.background-menu{
+    background-color: rgba(214,86,121,0.8);
+    position: fixed;
+    .wrap-logo{
+      background: transparent !important;
+      width: 130px;
+      height: 100%;
+      margin: 0
+    }
+    ul.menu-info{
+      padding: 23px 18px 24px;
+    }
+  }
   ul.menu-info {
     padding: 90px 0 0 60px;
     list-style: none;
+    text-align: center;
     li {
       display: inline-block;
       a {
         color: white;
-        padding: 20px;
+        padding: 13px;
         text-transform: uppercase;
         letter-spacing: 3px;
-        font-size: 15px;
+        font-size: 12px;
+        font-weight: bold;
       }
     }
   }
   .wrap-logo {
-    background-color: #d65679;
+    transition: all 1s;
+    background-color: $main-color;
     position: relative;
     width: 150px;
     height: 150px;

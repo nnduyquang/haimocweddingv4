@@ -1,0 +1,64 @@
+#h_3 {
+  background-color: #f6f6f6;
+  padding: 105px 0;
+  h3.title {
+    display: block;
+    font-size: 17px;
+    letter-spacing: 3px;
+    line-height: 54.4px;
+    margin: 0 0 28px;
+    padding: 0 0 6px;
+    position: relative;
+    text-align: center;
+    color: #212121;
+    &:after{
+      background: none repeat scroll 0 0 $main-color;
+      bottom: 0;
+      content: "";
+      height: 2px;
+      left: 50%;
+      margin-left: -35px;
+      position: absolute;
+      width: 70px;
+    }
+  }
+  .image-cover{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    img{
+      width: 100%;
+      transition: all 1s;
+    }
+    &:hover{
+      img{
+        animation: zoominh3 10s ease-in infinite;
+      }
+    }
+  }
+  p{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    margin: 0;
+    padding: 30px 10px 50px;
+    position: relative;
+    text-align: center;
+    color: #666666;
+    background: #fff;
+  }
+  @keyframes zoominh3 {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.5) rotate(20deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+}
