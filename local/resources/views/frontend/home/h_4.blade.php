@@ -1,4 +1,9 @@
 <div id="h_4">
+    {{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}
+    <h3 class="title">
+        <p>LET US BE PART OF YOUR WEDDING</p>
+        Bridging Your Dreams and Reality
+    </h3>
     <div class="row no-gutters">
         <div class="col-md-4">
             <div class="one-item">

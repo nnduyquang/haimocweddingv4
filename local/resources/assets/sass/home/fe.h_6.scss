@@ -1,0 +1,28 @@
+#h_6{
+  position: relative;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  padding: 120px 0;
+  z-index: 1;
+  &:after{
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+  }
+  .content{
+    position: relative;
+    z-index: 2
+  ;
+    p{
+      text-align: center;
+      color: white;
+      font-size: 35px;
+    }
+  }
+}

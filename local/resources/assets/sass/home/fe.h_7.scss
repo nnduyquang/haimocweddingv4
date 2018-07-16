@@ -1,0 +1,54 @@
+#h_7 {
+  padding: 49px 0;
+  h3.title {
+    font-size: 17px;
+    line-height: 54.4px;
+    color: #212121;
+    position: relative;
+    padding: 8px 0;
+    margin: 0 0 49px 0;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    &:after {
+      width: 70px;
+      height: 2px;
+      background: $main-color;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -35px;
+      content: '';
+    }
+  }
+  .info {
+    .one-item {
+      h2.title {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0;
+        padding: 34px 0 10px;
+        position: relative;
+        color: #202020;
+        letter-spacing: 3px;
+        a {
+          text-decoration: none;
+          color: #202020;
+          text-transform: uppercase;
+        }
+      }
+      .bottom {
+        a {
+          color: #666666;
+          p {
+            font-size: 12px;
+            line-height: 24px;
+            margin: 0;
+            padding: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
