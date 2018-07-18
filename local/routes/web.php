@@ -4,10 +4,10 @@
 Route::get('/', function () {
     return view('frontend.home.index');
 });
+Route::get('/album/huy-tram', function () {
+    return view('frontend.album.index');
+});
 Route::post('/tim-kiem','FrontendController@getSearch')->name('search');
-
-
-
 Route::get('/admin/sml_login', 'AuthController@checklogin');
 Route::post('sml_login', 'AuthController@login')->name('login');
 Route::get('/admin/sml_logout', 'AuthController@logout')->name('logout');

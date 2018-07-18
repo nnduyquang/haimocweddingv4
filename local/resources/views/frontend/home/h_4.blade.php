@@ -11,7 +11,7 @@
                 </div>
                 <div class="content">
                     <i class="far fa-heart"></i>
-                    <h3 class="title"><a href="#">Praesent & orci</a></h3>
+                    <h3 class="title"><a href="{{URL::to('album/huy-tram')}}">Praesent & orci</a></h3>
                     <div class="time-wedding">
                         <span>February 5, 2015 /Vietnam</span>
                     </div>

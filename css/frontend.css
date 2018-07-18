@@ -1147,3 +1147,32 @@ This class is added to the container
   margin: 0;
   padding: 10px 0 0;
 }
+
+#al_1 img.main-img {
+  width: 100%;
+  height: auto;
+}
+
+#al_1 .title {
+  background-color: #f4f4f4;
+}
+
+#al_1 .title .icon-title {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 21px;
+}
+
+#al_1 .title h1 {
+  text-align: center;
+  line-height: 30px;
+  color: #968266;
+  text-transform: Capitalize;
+  font-size: 36px;
+  padding: 15px 0px 15px 0px;
+}
+
+#al_1 .description {
+  line-height: 1.5;
+  margin: 40px 0;
+}

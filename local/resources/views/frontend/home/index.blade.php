@@ -5,8 +5,8 @@
 @section('description')
     Nội Thất
 @stop
-@section('styles')
-    {{ Html::style('css/themes/default/default.css') }}
+@section('keyword')
+    Nội Thất
 @stop
 @section('slider')
     @include('frontend.common.slider')
