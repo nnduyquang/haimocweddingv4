@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-8">
                 <ul class="menu-info">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{{URL::to('/')}}">Home</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Events</a></li>

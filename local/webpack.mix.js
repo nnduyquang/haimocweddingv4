@@ -22,6 +22,8 @@ mix
     //JS CORE FRONTEND
     .styles([
         'bower_components/nivo-slider/jquery.nivo.slider.pack.js',
+        'bower_components/imagesloaded/imagesloaded.pkgd.min.js',
+        'bower_components/masonry-layout/dist/masonry.pkgd.min.js',
     ], '../js/core.frontend.js')
     .styles([
         'bower_components/admin-lte/dist/js/adminlte.min.js',

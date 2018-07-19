@@ -1,7 +1,8 @@
 var plugins = {
     menuSideBar: $('.sidebar'),
     sliderCarousel:$('.slider-carousel'),
-    menuTop:$('#menu')
+    menuTop:$('#menu'),
+    gridAlbum: $('.grid-album'),
 };
 $(document).ready(function () {
     function sidebar() {
@@ -37,6 +38,36 @@ $(document).ready(function () {
             interval: 8000,
             pause:false
         });
+    }
+
+    function runGridAlbum() {
+        var $grid = plugins.gridAlbum.masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-sizer'
+        });
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry();
+        });
+        var isOpen = true;
+        $('.choose-dd').click(function () {
+            if (isOpen) {
+                $('ul.ul-dd').addClass('open-dd');
+                $('.fa-plus').css('display','none');
+                $('.fa-minus').css('display','block');
+                isOpen = false;
+            } else {
+                $('ul.ul-dd').removeClass('open-dd');
+                $('.fa-plus').css('display','block');
+                $('.fa-minus').css('display','none');
+                isOpen = true;
+            }
+        });
+
+
+    }
+    if(plugins.gridAlbum.length){
+        runGridAlbum();
     }
     if(plugins.sliderCarousel.length){
         runSliderCarousel();

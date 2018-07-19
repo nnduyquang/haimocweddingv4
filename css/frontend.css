@@ -209,6 +209,24 @@ img {
   text-decoration: none;
 }
 
+#contact {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+#contact p.title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#contact i {
+  color: #d65679;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
 #menu {
   position: absolute;
   z-index: 99;
@@ -1153,17 +1171,17 @@ This class is added to the container
   height: auto;
 }
 
-#al_1 .title {
+#al_1 .main-title {
   background-color: #f4f4f4;
 }
 
-#al_1 .title .icon-title {
+#al_1 .main-title .icon-title {
   background-position: center center !important;
   background-repeat: no-repeat !important;
   height: 21px;
 }
 
-#al_1 .title h1 {
+#al_1 .main-title h1 {
   text-align: center;
   line-height: 30px;
   color: #968266;
@@ -1175,4 +1193,48 @@ This class is added to the container
 #al_1 .description {
   line-height: 1.5;
   margin: 40px 0;
+}
+
+#al_1 .album .grid-sizer, #al_1 .album .grid-item {
+  width: 33.333%;
+}
+
+#al_1 .album .grid-item {
+  float: left;
+}
+
+#al_1 .album .grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+#al_1 .other {
+  padding: 60px 0;
+}
+
+#al_1 .other h4 {
+  color: #d65679;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9dcdd;
+  padding-bottom: 10px;
+}
+
+#al_1 .other .one-item {
+  text-align: center;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #d65679;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#al_1 .other .one-item:hover {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+}
+
+#al_1 .other .one-item span.title {
+  display: block;
+  padding: 10px 0;
 }

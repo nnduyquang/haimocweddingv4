@@ -24,6 +24,8 @@
     "gijgo": "^1.8.2",
     "ckeditor": "^4.8.0",
     "bootstrap-toggle": "^2.2.2",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "masonry-layout": "masonry#^4.2.2",
+    "imagesloaded": "^4.1.4"
   }
 }
