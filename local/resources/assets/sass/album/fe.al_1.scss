@@ -23,8 +23,11 @@
     line-height: 1.5;
     margin: 40px 0;
   }
+  .info {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
   .album {
-
     .grid-sizer, .grid-item {
       width: 33.333%;
     }
@@ -45,15 +48,15 @@
       border-bottom: 1px solid #d9dcdd;
       padding-bottom: 10px;
     }
-    .one-item{
+    .one-item {
       text-align: center;
-      box-shadow: 0 0 35px rgba(0,0,0,.1);
+      box-shadow: 0 0 35px rgba(0, 0, 0, .1);
       border-bottom: 2px solid $main-color;
       transition: all 0.2s;
-      &:hover{
-        box-shadow: 0 10px 30px 0 rgba(58,87,135,.58);
+      &:hover {
+        box-shadow: 0 10px 30px 0 rgba(58, 87, 135, .58);
       }
-      span.title{
+      span.title {
         display: block;
         padding: 10px 0;
       }

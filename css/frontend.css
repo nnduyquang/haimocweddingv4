@@ -214,6 +214,7 @@ img {
   line-height: 1.5;
   margin-top: 60px;
   font-size: 20px;
+  margin-bottom: 60px;
 }
 
 #contact p.title {
@@ -225,6 +226,24 @@ img {
   color: #d65679;
   margin-right: 5px;
   font-size: 20px;
+}
+
+#contact .booking {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+#contact .booking a {
+  display: inline-block;
+  color: white;
+  background-color: #d65679;
+  padding: 10px 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#contact .booking a:hover {
+  background-color: #ff6d00;
 }
 
 #menu {
@@ -263,10 +282,10 @@ img {
 
 #menu ul.menu-info li a {
   color: white;
-  padding: 13px;
+  padding: 23px 15px 24px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
 }
 
@@ -1195,6 +1214,11 @@ This class is added to the container
   margin: 40px 0;
 }
 
+#al_1 .info {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 #al_1 .album .grid-sizer, #al_1 .album .grid-item {
   width: 33.333%;
 }
@@ -1237,4 +1261,224 @@ This class is added to the container
 #al_1 .other .one-item span.title {
   display: block;
   padding: 10px 0;
+}
+
+#co_1 .main-title {
+  background-color: #f4f4f4;
+}
+
+#co_1 .main-title .icon-title {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 21px;
+}
+
+#co_1 .main-title h1 {
+  text-align: center;
+  line-height: 30px;
+  color: #968266;
+  text-transform: Capitalize;
+  font-size: 36px;
+  padding: 15px 0px 15px 0px;
+}
+
+#co_1 .location {
+  background-color: #d65679;
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+
+#co_1 .location .text-name {
+  color: white;
+  border-right: 1px solid white;
+  line-height: 2.5;
+}
+
+#co_1 .location ul.list-location {
+  -webkit-columns: 3;
+          columns: 3;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+#co_1 .location ul.list-location li {
+  display: block;
+}
+
+#co_1 .location ul.list-location li a {
+  color: white;
+  padding: 0;
+  font-size: 14px;
+  line-height: 2.5;
+  font-weight: bold;
+}
+
+#co_1 .list-album .one-item {
+  position: relative;
+}
+
+#co_1 .list-album .one-item:hover a.img-item {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+}
+
+#co_1 .list-album .one-item a.img-item {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block;
+  height: auto;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+
+#co_1 .list-album .one-item a.img-item img {
+  height: auto;
+  width: 100%;
+}
+
+#co_1 .list-album .one-item .plan-box {
+  position: relative;
+  z-index: 1;
+  width: 89.4736842105%;
+  margin: -40px auto 0;
+  border-bottom: solid 2px #d65679;
+  background-color: inherit;
+}
+
+#co_1 .list-album .one-item .plan-box:before {
+  left: 5px;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+#co_1 .list-album .one-item .plan-box:after {
+  right: 5px;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+#co_1 .list-album .one-item .plan-box .inner {
+  position: relative;
+  padding: 28px 28px 0;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2;
+}
+
+#co_1 .list-album .one-item .plan-box .inner h3.title {
+  text-align: center;
+  padding: 20px;
+}
+
+#co_1 .list-album .one-item .plan-box .inner h3.title a {
+  color: black;
+}
+
+#pr_1 .main-title {
+  background-color: #f4f4f4;
+}
+
+#pr_1 .main-title .icon-title {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 21px;
+}
+
+#pr_1 .main-title h1 {
+  text-align: center;
+  line-height: 30px;
+  color: #968266;
+  text-transform: Capitalize;
+  font-size: 36px;
+  padding: 15px 0px 15px 0px;
+}
+
+#pr_1 .info .one-item {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+
+#pr_1 .info .one-item:hover {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+}
+
+#pr_1 .info .one-item .img-item {
+  height: auto;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#pr_1 .info .one-item .plan {
+  padding: 20px;
+}
+
+#pr_1 .info .one-item .plan h4.title {
+  font-size: 20px;
+  height: 35px;
+}
+
+#pr_1 .info .one-item .plan p.price {
+  line-height: 2.5;
+}
+
+#pr_1 .info .one-item .plan p.price span {
+  font-size: 36px;
+}
+
+#pr_1 .info .one-item .plan p.detail {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+#pr_1 .info .one-item .plan .content h5 {
+  margin-bottom: 21px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#pr_1 .info .one-item .plan .content ul {
+  list-style: none;
+}
+
+#pr_1 .info .one-item .plan .content ul li {
+  line-height: 1.5;
+  position: relative;
+}
+
+#pr_1 .info .one-item .plan .content ul li:before {
+  content: '';
+  width: 2px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  left: -11px;
+  background-color: #333333;
+}
+
+#pr_1 .info .one-item .booking {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+#pr_1 .info .one-item .booking a {
+  display: inline-block;
+  color: white;
+  background-color: #d65679;
+  padding: 10px 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#pr_1 .info .one-item .booking a:hover {
+  background-color: #ff6d00;
 }

@@ -4,6 +4,12 @@
 Route::get('/', function () {
     return view('frontend.home.index');
 });
+Route::get('/album', function () {
+    return view('frontend.collection.index');
+});
+Route::get('/bang-gia', function () {
+    return view('frontend.price.index');
+});
 Route::get('/album/huy-tram', function () {
     return view('frontend.album.index');
 });

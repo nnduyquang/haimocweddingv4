@@ -1,18 +1,33 @@
-#contact{
+#contact {
   text-align: center;
   line-height: 1.5;
   margin-top: 60px;
   font-size: 20px;
-  p.title{
+  margin-bottom: 60px;
+  p.title {
     text-transform: uppercase;
     font-weight: bold;
   }
-  i{
+  i {
     color: $main-color;
     margin-right: 5px;
     font-size: 20px;
   }
-  hr{
+  hr {
 
+  }
+  .booking {
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      color: white;
+      background-color: $main-color;
+      padding: 10px 20px;
+      transition: all 0.2s;
+      &:hover{
+        background-color: $main-color-hover;
+      }
+    }
+    text-transform: capitalize;
   }
 }

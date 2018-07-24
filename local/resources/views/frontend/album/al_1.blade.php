@@ -22,6 +22,11 @@
             sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
             asperiores repellat.
         </div>
+        <div class="info text-center">
+            <p>Photographer: Hải Nguyễn</p>
+            <p>Makeup: Ly Ly Lê</p>
+            <p>Địa điểm chụp: Cầu Tình Yêu, Bà Nà, Bãi Đa</p>
+        </div>
         <div class="album">
             <div class="grid-album">
                 <div class="grid-sizer">
@@ -144,7 +149,7 @@
         </div>
         @include('frontend.common.contact')
         <div class="other">
-            <h4>Có thể bạn thích <i class="far fa-heart"></i></h4>
+            <h4>Album mới nhất <i class="far fa-heart"></i></h4>
             <div class="row">
                 <div class="col-md-3 mb-4">
                     <div class="card one-item h-100">

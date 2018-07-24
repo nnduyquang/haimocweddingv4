@@ -3,11 +3,12 @@
         <div class="row">
             <div class="col-md-8">
                 <ul class="menu-info">
-                    <li><a href="{{URL::to('/')}}">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="{{URL::to('/')}}">Trang chủ</a></li>
+                    <li><a href="{{URL::to('/album')}}">Album</a></li>
+                    <li><a href="#">Khuyến Mãi</a></li>
+                    <li><a href="{{URL::to('/bang-gia')}}">Bảng Giá</a></li>
+                    <li><a href="#">Bộ Sưu Tập</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
                 </ul>
             </div>
             <div class="col-md-4">

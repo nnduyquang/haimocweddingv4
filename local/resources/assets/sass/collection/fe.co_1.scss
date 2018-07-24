@@ -1,0 +1,96 @@
+#co_1 {
+  .main-title {
+    background-color: #f4f4f4;
+    .icon-title {
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      height: 21px;
+    }
+    h1 {
+      text-align: center;
+      line-height: 30px;
+      color: #968266;
+      text-transform: Capitalize;
+      font-size: 36px;
+      padding: 15px 0px 15px 0px;
+    }
+  }
+  .location {
+    background-color: $main-color;
+    padding: 20px 0;
+    margin-bottom: 60px;
+    .text-name{
+      color: white;
+      border-right: 1px solid white;
+      line-height: 2.5;
+    }
+    ul.list-location {
+      columns: 3;
+      list-style-type: disc;
+      list-style-position: inside;
+      li {
+        display: block;
+        a {
+          color: white;
+          padding: 0;
+          font-size: 14px;
+          line-height: 2.5;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .list-album {
+    .one-item {
+      position: relative;
+      &:hover{
+        a.img-item{
+          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+        }
+      }
+      a.img-item {
+        transition: all 0.2s;
+        display: block;
+        height: auto;
+        overflow: hidden;
+        box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+        img {
+          height: auto;
+          width: 100%;
+          //padding: 5px;
+        }
+      }
+      .plan-box{
+        position: relative;
+        z-index: 1;
+        width: 89.4736842105%;
+        margin: -40px auto 0;
+        border-bottom: solid 2px $main-color;
+        background-color: inherit;
+        &:before{
+          left: 5px;
+          transform: rotate(-3deg);
+        }
+        &:after{
+          right: 5px;
+          transform: rotate(3deg);
+        }
+        .inner{
+          position: relative;
+          padding: 28px 28px 0;
+          background: #fff;
+          box-sizing: border-box;
+          z-index: 2;
+          h3.title{
+            text-align: center;
+            padding: 20px;
+            a{
+              color: black;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
