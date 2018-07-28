@@ -271,7 +271,7 @@ img {
 }
 
 #menu ul.menu-info {
-  padding: 90px 0 0 60px;
+  padding: 90px 0 0 59px;
   list-style: none;
   text-align: center;
 }
@@ -857,7 +857,7 @@ This class is added to the container
 }
 
 #h_4 img.img-intro {
-  width: auto;
+  width: 50%;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -1185,6 +1185,47 @@ This class is added to the container
   padding: 10px 0 0;
 }
 
+#h_8 .video-wrap {
+  position: relative;
+}
+
+#h_8 .video-wrap #sea {
+  width: 100%;
+  height: auto;
+}
+
+#h_8 .video-wrap .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(204, 175, 111, 0.35);
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  mix-blend-mode: overlay;
+}
+
+#h_8 .video-wrap .description h2 {
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: 600;
+  text-shadow: 0 1px 10px black;
+  font-size: 100px;
+  color: white;
+}
+
 #al_1 img.main-img {
   width: 100%;
   height: auto;
@@ -1265,6 +1306,7 @@ This class is added to the container
 
 #co_1 .main-title {
   background-color: #f4f4f4;
+  margin-bottom: 60px;
 }
 
 #co_1 .main-title .icon-title {
@@ -1481,4 +1523,80 @@ This class is added to the container
 
 #pr_1 .info .one-item .booking a:hover {
   background-color: #ff6d00;
+}
+
+#cont_1 .main-title {
+  background-color: #f4f4f4;
+  margin-bottom: 60px;
+}
+
+#cont_1 .main-title .icon-title {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 21px;
+}
+
+#cont_1 .main-title h1 {
+  text-align: center;
+  line-height: 30px;
+  color: #968266;
+  text-transform: Capitalize;
+  font-size: 36px;
+  padding: 15px 0px 15px 0px;
+}
+
+#cont_1 .contact_top {
+  line-height: 1.5 !important;
+}
+
+#cont_1 .contact_top h3.title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#cont_1 .contact_top p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#cont_1 .contact_top h4 {
+  font-size: 20px;
+  color: #0d51db;
+  margin-bottom: 20px;
+}
+
+#cont_1 .contact_top ul {
+  list-style: none;
+}
+
+#cont_1 .contact_top ul li i {
+  margin-right: 10px;
+}
+
+#cont_1 .contact_bottom .input-group {
+  margin-bottom: 20px;
+}
+
+#cont_1 .contact_bottom .input-group input, #cont_1 .contact_bottom .input-group textarea {
+  border-radius: inherit;
+}
+
+#cont_1 .contact_bottom button {
+  border-radius: inherit;
+  background-color: #0d51db;
+  color: white;
+  font-weight: bold;
+}
+
+#cont_1 .contact_bottom button .successSending, #cont_1 .contact_bottom button .loadingSending {
+  margin-left: 5px;
+}
+
+@media (max-width: 575.98px) {
+  #cont_1 .contact_top {
+    margin-top: 20px;
+  }
+  #cont_1 .contact_bottom .button-group {
+    text-align: center;
+  }
 }

@@ -8,7 +8,7 @@
                     <li><a href="#">Khuyến Mãi</a></li>
                     <li><a href="{{URL::to('/bang-gia')}}">Bảng Giá</a></li>
                     <li><a href="#">Bộ Sưu Tập</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="{{URL::to('/lien-he')}}">Liên Hệ</a></li>
                 </ul>
             </div>
             <div class="col-md-4">

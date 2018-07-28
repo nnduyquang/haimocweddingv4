@@ -1,5 +1,7 @@
 <div id="h_4">
-    {{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}
+    <div class="col-md-12 p-0">
+        {{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}
+    </div>
     <h3 class="title">
         <p>LET US BE PART OF YOUR WEDDING</p>
         Bridging Your Dreams and Reality

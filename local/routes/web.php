@@ -10,6 +10,9 @@ Route::get('/album', function () {
 Route::get('/bang-gia', function () {
     return view('frontend.price.index');
 });
+Route::get('/lien-he', function () {
+    return view('frontend.contact.index');
+});
 Route::get('/album/huy-tram', function () {
     return view('frontend.album.index');
 });
