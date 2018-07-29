@@ -4,7 +4,7 @@
   width: 100%;
   transition: all 0.5s;
   &.background-menu{
-    background-color: rgba(214,86,121,0.8);
+    background-color: $main-color-rgba;
     position: fixed;
     .wrap-logo{
       background: transparent !important;

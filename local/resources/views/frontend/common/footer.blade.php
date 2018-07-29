@@ -3,23 +3,23 @@
         <div class="row">
             <div class="col-md-4">
                 <h3 class="title">
-                    <span>location</span>
+                    <span>địa chỉ</span>
                 </h3>
                 <div class="content">
-                    <address> London, UK, 10, Friks, Avenue</address>
-                    <span> +987 092 291 091 </span>
-                    <span>support@templaza.com</span>
+                    <address> 38 Tôn Thất Đạm, Thanh Khê, Đà Nẵng</address>
+                    <span> 0902.710.212 - 0919.567.177 </span>
+                    <span>seaweddingvn@gmail.com</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="logo-footer">
                     <a href="#">{{ Html::image('images/logo/logo_office_2.png','',array('class'=>'')) }}</a>
-                    <p>All Rights Reserved. Copyright @ TemPlaza </p>
+                    <p>All Rights Reserved. Copyright @ smartlinks.vn </p>
                 </div>
             </div>
             <div class="col-md-4">
                 <h3 class="title">
-                    <span>get in touch</span>
+                    <span>kết nối với chúng tôi</span>
                 </h3>
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>

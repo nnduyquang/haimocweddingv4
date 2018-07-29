@@ -1,7 +1,9 @@
 #al_1 {
-  img.main-img {
-    width: 100%;
-    height: auto;
+  .main-img {
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .main-title {
     background-color: #f4f4f4;
@@ -33,9 +35,21 @@
     }
     .grid-item {
       float: left;
-      img {
-        display: block;
-        max-width: 100%;
+      a.fancybox {
+        &:focus {
+          outline: none;
+        }
+        img {
+          display: block;
+          max-width: 100%;
+          padding: 10px;
+          border-radius: 20px;
+          transition: all 0.2s;
+          &:hover {
+            box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+            padding: 0px;
+          }
+        }
       }
     }
   }
@@ -49,16 +63,22 @@
       padding-bottom: 10px;
     }
     .one-item {
-      text-align: center;
       box-shadow: 0 0 35px rgba(0, 0, 0, .1);
-      border-bottom: 2px solid $main-color;
+      border-radius: 20px;
       transition: all 0.2s;
       &:hover {
         box-shadow: 0 10px 30px 0 rgba(58, 87, 135, .58);
       }
+      .img-cover {
+        a {
+          img {
+            border-radius: 20px 20px 0 0;
+          }
+        }
+      }
       span.title {
         display: block;
-        padding: 10px 0;
+        padding: 20px
       }
     }
   }

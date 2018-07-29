@@ -2,9 +2,9 @@
     <div class="container">
         <hr>
         <div>
-            <p class="title">hải mộc wedding</p>
-            <p>25 hoàng diệu, Phường 12, Quận 4, TPHCM</p>
-            <p><i class="fas fa-phone"></i> 0907.468.264 - <i class="far fa-envelope"></i> nnduyquang@gmail.com</p>
+            <p class="title">sea wedding</p>
+            <p>38 Tôn Thất Đạm, Thanh Khê, Đà Nẵng</p>
+            <p><i class="fas fa-phone-volume"></i> 0902.710.212 - <i class="far fa-envelope"></i> seaweddingvn@gmail.com</p>
         </div>
         <div class="booking"><a href="#">Đặt Lịch</a></div>
     </div>

@@ -2,7 +2,7 @@
     <div id="carouselExampleControls" class="carousel slide carousel-fade slider-carousel" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="edit-slide slider1" style="background:url('{{URL::to('images/slider/slider2/slider1.jpg')}}')">
+                <div class="edit-slide slider1" style="background:url('{{URL::to('images/slider/slider2/slider4.jpg')}}')">
                     {{--{{ Html::image('images/slider/slider2/slider1.jpg','',array('class'=>'main-slider')) }}--}}
                     {{--<div class="container" style="position: relative">--}}
                         {{--<div class="test-slide center-text">--}}
@@ -48,6 +48,21 @@
                         {{--</div>--}}
                         {{--{{ Html::image('images/slider/slider2/content-image-4.png','',array('class'=>'chart-slider animated fadeInRight')) }}--}}
                         {{--{{ Html::image('images/slider/slider2/content-arrow-1.png','',array('class'=>'arrow-slider-1 animated fadeInUp','style'=>'animation-delay:1.5s')) }}--}}
+                    {{--</div>--}}
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="edit-slide slider3" style="background:url('{{URL::to('images/slider/slider2/slider1.jpg')}}')">
+                    {{--{{ Html::image('images/slider/slider2/slider3.jpg','',array('class'=>'main-slider')) }}--}}
+                    {{--<div class="container" style="position: relative">--}}
+                    {{--<div class="test-slide center-text">--}}
+                    {{--<h2 class="animated fadeInLeft">BỨC PHÁ DOANH THU<br>CÙNG SMARTLINKS</h2>--}}
+                    {{--<span class="animated fadeInDown" style="animation-delay: 1s;">Smartlinks giúp bạn cải thiện chiến lược marketing hay và gia tăng doanh số<br> đồng thời tiết kiệm chi phí trong việc tìm kiếm khách hàng mới</span>--}}
+                    {{--<div style="animation-delay: 1.5s;" class="animated fadeInUp phone-call"><a--}}
+                    {{--href="tel:0914648131">0914.348.131</a></div>--}}
+                    {{--</div>--}}
+                    {{--{{ Html::image('images/slider/slider2/content-image-4.png','',array('class'=>'chart-slider animated fadeInRight')) }}--}}
+                    {{--{{ Html::image('images/slider/slider2/content-arrow-1.png','',array('class'=>'arrow-slider-1 animated fadeInUp','style'=>'animation-delay:1.5s')) }}--}}
                     {{--</div>--}}
                 </div>
             </div>

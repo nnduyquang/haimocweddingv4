@@ -1,6 +1,6 @@
 <div id="pr_1">
     <div class="main-img">
-        {{ Html::image('images/album/huytram/NAMZ1905-min.png','',array('class'=>'')) }}
+        {{ Html::image('images/temps/price/price-list.jpg','',array('class'=>'')) }}
     </div>
     <div class="main-title">
         <div class="icon-title" style="background:url('{{URL::to('images/icon/gallry_icon2.png')}}')"></div>

@@ -3,8 +3,8 @@
         {{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}
     </div>
     <h3 class="title">
-        <p>LET US BE PART OF YOUR WEDDING</p>
-        Bridging Your Dreams and Reality
+        <p>HÃY ĐỂ CHÚNG TÔI LÀ MỘT PHẦN TRONG NGÀY TRỌN ĐẠI CỦA CỦA BẠN</p>
+        <span>ALBUM GALLERY</span>
     </h3>
     <div class="row no-gutters">
         <div class="col-md-4">

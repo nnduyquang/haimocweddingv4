@@ -1,7 +1,7 @@
 <div id="h_7">
     <div class="container">
         <h3 class="title">
-            FROM OUR BLOG
+            Ý TƯỞNG CƯỚI
         </h3>
         <div class="info">
             <div class="row">

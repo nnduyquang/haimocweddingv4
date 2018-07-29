@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card one-item h-100">
-                    <h3 class="title">WEDDING DECOR</h3>
+                    <h3 class="title">CHỤP HÌNH CƯỚI</h3>
                     <div class="image-cover">
                         <a href="#">
                             {{ Html::image('images/temps/home/introduct1.jpg','',array('class'=>'')) }}
@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card one-item h-100">
-                    <h3 class="title">BRIDE & GROOM</h3>
+                    <h3 class="title">TRỌN GÓI NGÀY CƯỚI</h3>
                     <div class="image-cover">
                         <a href="#">
                             {{ Html::image('images/temps/home/introduct2.jpg','',array('class'=>'')) }}
@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card one-item h-100">
-                    <h3 class="title">THE PROPOSE</h3>
+                    <h3 class="title">QUAY PHIM PHÓNG SỰ</h3>
                     <div class="image-cover">
                         <a href="#">
                             {{ Html::image('images/temps/home/introduct3.jpg','',array('class'=>'')) }}

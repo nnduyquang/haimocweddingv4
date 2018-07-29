@@ -23,19 +23,18 @@
       height: 50%;
       width: 100%;
       transform: translate(-50%,-50%);
-
       text-align: center;
-      background-color: rgba(204,175,111,0.35);
-      border: 1px solid white;
+      //background-color: rgba(204,175,111,0.35);
+      //border: 1px solid white;
       display: flex;
       align-items: center;
       justify-content: center;
-      mix-blend-mode: overlay;
+      mix-blend-mode: darken;
       h2{
         text-transform: uppercase;
         color: transparent;
         font-weight: 600;
-        text-shadow: 0 1px 10px rgba(0,0,0,1);
+        text-shadow: 0 1px 10px $main-color;
         font-size: 100px;
         color: white;
       }

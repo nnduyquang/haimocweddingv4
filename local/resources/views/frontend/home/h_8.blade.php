@@ -4,7 +4,7 @@
             <source src="{{URL::to('video/sea.mp4')}}" type="video/mp4">
         </video>
         <div class="description">
-            <h2>hải mộc wedding</h2>
+            <h2>sea wedding</h2>
         </div>
     </div>
 

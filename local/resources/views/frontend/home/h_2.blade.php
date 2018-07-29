@@ -12,12 +12,10 @@
             <div class="col-md-6">
                 <div class="info">
                     <h1 class="title">
-                        Welcome to French Wedding
+                        Chào mừng đến Sea Wedding
                     </h1>
                     <p class="sub-intro">WEDDING PHOTOGRAPHY STUDIO</p>
-                    <p class="content">We aspire to bring out the best in you through our in-house designer gowns,
-                        professional make-over as well as excellent studio and outdoor photography both in Singapore and
-                        Overseas. </p>
+                    <p class="content">Hãy lưu giữ lại những khoảnh khắc hạnh phúc nhất về tình yêu đôi lứa thông qua những bức hình cưới tuyệt đẹp cùng với đội ngũ chuyên nghiệp tại Sea Wedding </p>
                     <div class="bottom">
                         {{ Html::image('images/temps/home/welcome_icon.png','',array('class'=>'')) }}
                     </div>

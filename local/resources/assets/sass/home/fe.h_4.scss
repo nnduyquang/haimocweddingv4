@@ -7,9 +7,14 @@
   }
   h3.title {
     p {
-      color: $main-color;
+      color: black;
       font-size: 14px;
       text-transform: uppercase;
+      font-weight: bold;
+    }
+    span{
+      color: $main-color;
+      font-weight: bold;
     }
     display: block;
     font-size: 17px;

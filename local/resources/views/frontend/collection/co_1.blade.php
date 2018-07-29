@@ -1,6 +1,6 @@
 <div id="co_1">
     <div class="main-img">
-        {{ Html::image('images/album/huytram/NAMZ1905-min.png','',array('class'=>'')) }}
+        {{ Html::image('images/temps/album/album.jpg','',array('class'=>'')) }}
     </div>
     <div class="main-title">
         <div class="icon-title" style="background:url('{{URL::to('images/icon/gallry_icon2.png')}}')"></div>

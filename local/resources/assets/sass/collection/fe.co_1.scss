@@ -1,4 +1,9 @@
 #co_1 {
+  .main-img{
+    img{
+      width: 100%;
+    }
+  }
   .main-title {
     background-color: #f4f4f4;
     margin-bottom: 60px;
@@ -44,10 +49,12 @@
   .list-album {
     .one-item {
       position: relative;
+      border-radius: 10px 10px 10px 10px;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
       &:hover{
-        a.img-item{
-          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
-        }
+        transform: translate(0px, -25px);
+        box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
       }
       a.img-item {
         transition: all 0.2s;
@@ -55,6 +62,7 @@
         height: auto;
         overflow: hidden;
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+        border-radius: 10px 10px 0 0;
         img {
           height: auto;
           width: 100%;
@@ -62,12 +70,12 @@
         }
       }
       .plan-box{
-        position: relative;
+        //position: relative;
         z-index: 1;
-        width: 89.4736842105%;
-        margin: -40px auto 0;
-        border-bottom: solid 2px $main-color;
+        //width: 89.4736842105%;
+        //margin: -40px auto 0;
         background-color: inherit;
+        border-radius: 0 0 10px 10px;
         &:before{
           left: 5px;
           transform: rotate(-3deg);
@@ -78,20 +86,19 @@
         }
         .inner{
           position: relative;
-          padding: 28px 28px 0;
           background: #fff;
           box-sizing: border-box;
           z-index: 2;
+          border-radius: 0 0 10px 10px;
           h3.title{
-            text-align: center;
             padding: 20px;
+            font-size: 24px;
             a{
-              color: black;
+              color: $main-color;
             }
           }
         }
       }
-
     }
   }
 }

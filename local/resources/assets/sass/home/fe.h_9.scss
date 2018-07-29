@@ -1,0 +1,66 @@
+#h_9 {
+  margin-bottom: 60px;
+  h3.title {
+    font-size: 17px;
+    line-height: 54.4px;
+    color: $main-color;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 0;
+    margin: 0 0 49px 0;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    &:after {
+      width: 70px;
+      height: 2px;
+      background: $main-color;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -35px;
+      content: '';
+    }
+  }
+  .info {
+    .info-left, .info-right {
+      img {
+        padding-top: 40%;
+      }
+      .info-content {
+        h4 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 30px;
+          color: $main-color;
+          padding: 30px 0;
+          text-transform: uppercase;
+        }
+        span {
+          line-height: 1.5;
+        }
+      }
+    }
+    .info-center {
+      position: relative;
+      img {
+        position: absolute;
+        left: -20%;
+        right: -20%;
+        top: 0;
+        max-width: 140%;
+        z-index: 3;
+      }
+    }
+  }
+  .contact {
+    text-align: center;
+    a {
+      background-color: $main-color;
+      padding: 10px 30px;
+      border-radius: 20px;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}
