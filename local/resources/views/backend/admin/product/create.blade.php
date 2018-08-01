@@ -1,6 +1,6 @@
 @extends('backend.admin.master')
 @section('title-page')
-    Tạo Mới Sản Phẩm
+    Tạo Mới Album
 @stop
 @section('styles')
 @stop
@@ -31,11 +31,27 @@
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
-                <strong>Tên Sản Phẩm:</strong>
+                <strong>Tên Album:</strong>
                 {!! Form::text('name',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
+                {{--<div class="form-group">--}}
+                    {{--<strong>Mô Tả Ngắn:</strong>--}}
+                    {{--{!! Form::textarea('description',null,array('placeholder' => '','id'=>'description-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}--}}
+                {{--</div>--}}
                 <div class="form-group">
-                    <strong>Mô Tả Ngắn:</strong>
-                    {!! Form::textarea('description',null,array('placeholder' => '','id'=>'description-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
+                    <strong>Loại Album</strong>
+                    {!! Form::select('category_product',$dd_category_products, null,array('class' => 'form-control')) !!}
+                </div>
+                <div class="form-group">
+                    <strong>Địa Điểm</strong>
+                    <div class="location-info">
+                        @foreach($locations as $key=>$item)
+                            <label class="check-container">
+                                {{$item->name}}
+                                {{ Form::checkbox('list_location[]', $item->id, false, array('class' => '')) }}
+                                <span class="check-mark"></span>
+                            </label>
+                        @endforeach
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -49,37 +65,42 @@
                     {{ Html::image('','',array('id'=>'showHinh','class'=>'show-image'))}}
                 </div>
                 <div class="form-group">
-                    <strong>Loại Sản Phẩm</strong>
-                    {!! Form::select('category_product',$dd_category_products, null,array('class' => 'form-control')) !!}
+                    {!! Form::button('Thêm Hình Album', array('id' => 'btnBrowseMore','class'=>'btn btn-primary')) !!}
                 </div>
                 <div class="form-group">
-                    <strong>Mã Sản Phẩm</strong>
-                    {!! Form::text('code',null, array('placeholder' => 'Mã SP','class' => 'form-control')) !!}
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <strong>Giá: </strong>
-                            {!! Form::text('price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <strong>% Giảm Giá: </strong>
-                            {!! Form::text('sale',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <strong>Giá Giảm: </strong>
-                            {!! Form::text('final_price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
-                        </div>
+                    <div id="add-image" class="row">
+
                     </div>
                 </div>
+
+                {{--<div class="form-group">--}}
+                    {{--<strong>Mã Sản Phẩm</strong>--}}
+                    {{--{!! Form::text('code',null, array('placeholder' => 'Mã SP','class' => 'form-control')) !!}--}}
+                {{--</div>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-4">--}}
+                        {{--<div class="form-group">--}}
+                            {{--<strong>Giá: </strong>--}}
+                            {{--{!! Form::text('price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-4">--}}
+                        {{--<div class="form-group">--}}
+                            {{--<strong>% Giảm Giá: </strong>--}}
+                            {{--{!! Form::text('sale',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-4">--}}
+                        {{--<div class="form-group">--}}
+                            {{--<strong>Giá Giảm: </strong>--}}
+                            {{--{!! Form::text('final_price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
         <div class="col-md-12 p-0">
-            <strong>Mô Tả Sản Phẩm:</strong>
+            <strong>Mô Tả Album:</strong>
             {!! Form::textarea('content',null,array('placeholder' => '','id'=>'content-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
         </div>
         <hr>
@@ -114,7 +135,7 @@
             <input name="is_active" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
         </div>
         <div class="col-md-12" style="text-align:  center;">
-            <button id="btnDanhMuc" type="submit" class="btn btn-primary">Tạo Mới Sản Phẩm</button>
+            <button id="btnDanhMuc" type="submit" class="btn btn-primary">Tạo Mới Album</button>
         </div>
     </div>
 

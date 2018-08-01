@@ -1,10 +1,10 @@
 <div id="al_1">
     <div class="main-img">
-        {{ Html::image('images/album/huytram/NAMZ1905-min.png','',array('class'=>'')) }}
+        {{ Html::image($data['album']->image,'',array('class'=>'')) }}
     </div>
     <div class="main-title">
         <div class="icon-title" style="background:url('{{URL::to('images/icon/gallry_icon2.png')}}')"></div>
-        <h1>huy & trâm</h1>
+        <h1>{{$data['album']->name}}</h1>
         <div class="icon-title" style="background:url('{{URL::to('images/icon/garllry_icon1.png')}}')"></div>
     </div>
     <div class="container">
@@ -28,122 +28,128 @@
             <p>Địa điểm chụp: Cầu Tình Yêu, Bà Nà, Bãi Đa</p>
         </div>
         <div class="album">
+            @php
+                $subImage=explode(';',$data['album']->sub_image);
+
+            @endphp
             <div class="grid-album">
                 <div class="grid-sizer">
+                    @foreach($subImage as $key=>$item)
                     <div class="grid-item">
                         <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/10-min.png')}}">
-                            {{ Html::image('images/album/huytram/10-min.png','',array('class'=>'')) }}
+                           href="{{URL::to($item)}}">
+                            {{ Html::image($item,'',array('class'=>'')) }}
                         </a>
                     </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ1824-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ1827-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ1827-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ1874-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ1874-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ1905-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ1905-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ1912-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ1921-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ1921-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ1950-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ1950-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2026-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2026-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2048-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2048-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2049-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2049-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2071-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2071-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2144-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2144-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2158-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2158-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2161-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2161-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2167-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2167-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2188-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2198-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2198-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a class="fancybox" data-fancybox="gallery"
-                           href="{{URL::to('images/album/huytram/NAMZ2115-min.png')}}">
-                            {{ Html::image('images/album/huytram/NAMZ2115-min.png','',array('class'=>'')) }}
-                        </a>
-                    </div>
+                    @endforeach
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ1824-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ1827-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ1827-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ1874-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ1874-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ1905-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ1905-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ1912-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ1921-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ1921-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ1950-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ1950-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2026-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2026-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2048-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2048-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2049-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2049-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2071-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2071-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2144-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2144-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2158-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2158-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2161-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2161-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2167-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2167-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2188-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2198-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2198-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="grid-item">--}}
+                        {{--<a class="fancybox" data-fancybox="gallery"--}}
+                           {{--href="{{URL::to('images/album/huytram/NAMZ2115-min.png')}}">--}}
+                            {{--{{ Html::image('images/album/huytram/NAMZ2115-min.png','',array('class'=>'')) }}--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>

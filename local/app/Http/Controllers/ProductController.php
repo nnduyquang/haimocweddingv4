@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\CategoryItem;
+use App\Location;
 use App\Product;
 use App\Seo;
 use Illuminate\Http\Request;
@@ -30,6 +31,7 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $locations=Location::all();
         $dd_category_products = CategoryItem::where('type', CATEGORY_PRODUCT)->orderBy('order')->get();
         foreach ($dd_category_products as $key => $data) {
             if ($data->level == CATEGORY_PRODUCT_CAP_1) {
@@ -45,7 +47,7 @@ class ProductController extends Controller
         $newArray = [];
         self::showCategoryDropDown($dd_category_products, 0, $newArray);
         $dd_category_products = array_pluck($newArray, 'name', 'id');
-        return view('backend.admin.product.create', compact('roles', 'dd_category_products'));
+        return view('backend.admin.product.create', compact('roles', 'locations','dd_category_products'));
     }
 
     /**
@@ -59,47 +61,56 @@ class ProductController extends Controller
         $product = new Product();
         $seo=new Seo();
         $name = $request->input('name');
-        $description = $request->input('description');
+//        $description = $request->input('description');
         $content = $request->input('content');
-        $order = $request->input('order');
+//        $order = $request->input('order');
         $isActive = $request->input('is_active');
         $categoryPostID = $request->input('category_product');
         $seoTitle = $request->input('seo_title');
         $seoDescription = $request->input('seo_description');
         $seoKeywords = $request->input('seo_keywords');
-        $code = $request->input('code');
-        $price = $request->input('price');
-        $sale = $request->input('sale');
-        $finalSale = $request->input('final_price');
-        if (!IsNullOrEmptyString($price)) {
-            if (!IsNullOrEmptyString($sale)) {
-                $product->price = $price;
-                $product->sale = $sale;
-                $product->final_price = $finalSale;
-            } else {
-                $product->price = $price;
-                $product->sale = 0;
-                $product->final_price = 0;
+        $listLocation=$request->input('list_location');
+        $listImage = $request->input('image-choose');
+        $subImage = '';
+        if (count($listImage) != 0) {
+            foreach ($listImage as $key => $item) {
+                $subImage = $subImage . substr($item, strpos($item, 'images'), strlen($item) - 1) . ';';
             }
-        } else {
-            $product->price = 0;
-            $product->sale = 0;
-            $product->final_price = 0;
+            $product->sub_image = substr($subImage, 0, -1);
         }
-        if (!IsNullOrEmptyString($code)) {
-            $product->code = $code;
-        }
-        if (!IsNullOrEmptyString($order)) {
-            $product->order = $order;
-        }
+//        $code = $request->input('code');
+//        $price = $request->input('price');
+//        $sale = $request->input('sale');
+//        $finalSale = $request->input('final_price');
+//        if (!IsNullOrEmptyString($price)) {
+//            if (!IsNullOrEmptyString($sale)) {
+//                $product->price = $price;
+//                $product->sale = $sale;
+//                $product->final_price = $finalSale;
+//            } else {
+//                $product->price = $price;
+//                $product->sale = 0;
+//                $product->final_price = 0;
+//            }
+//        } else {
+//            $product->price = 0;
+//            $product->sale = 0;
+//            $product->final_price = 0;
+//        }
+//        if (!IsNullOrEmptyString($code)) {
+//            $product->code = $code;
+//        }
+//        if (!IsNullOrEmptyString($order)) {
+//            $product->order = $order;
+//        }
         if (!IsNullOrEmptyString($isActive)) {
             $product->isActive = 1;
         } else {
             $product->isActive = 0;
         }
-        if (!IsNullOrEmptyString($description)) {
-            $product->description = $description;
-        }
+//        if (!IsNullOrEmptyString($description)) {
+//            $product->description = $description;
+//        }
         $seo->seo_title= $seoTitle;
         $seo->seo_description= $seoDescription;
         $seo->seo_keywords= $seoKeywords;
@@ -116,6 +127,7 @@ class ProductController extends Controller
         $product->user_id = Auth::user()->id;
         $product->seo_id=$seo->id;
         $product->save();
+        $product->locations()->attach($listLocation);
         return redirect()->route('product.index')->with('success', 'Tạo Mới Thành Công Sản Phẩm');
     }
 
@@ -139,6 +151,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
+        $locations=Location::all();
         $dd_category_products = CategoryItem::where('type', CATEGORY_PRODUCT)->orderBy('order')->get();
         foreach ($dd_category_products as $key => $data) {
             if ($data->level == CATEGORY_PRODUCT_CAP_1) {
@@ -155,7 +168,7 @@ class ProductController extends Controller
         $dd_category_products = array_map(function ($index, $value) {
             return ['index' => $index, 'value' => $value];
         }, array_keys($dd_category_products), $dd_category_products);
-        return view('backend.admin.product.edit', compact('product', 'dd_category_products'));
+        return view('backend.admin.product.edit', compact('product', 'dd_category_products','locations'));
     }
 
     /**
@@ -170,36 +183,50 @@ class ProductController extends Controller
 
         $product = Product::find($id);
         $name = $request->input('name');
-        $description = $request->input('description');
+//        $description = $request->input('description');
         $content = $request->input('content');
-        $order = $request->input('order');
+//        $order = $request->input('order');
         $isActive = $request->input('is_active');
         $categoryPostID = $request->input('category_product');
         $seoTitle = $request->input('seo_title');
         $seoDescription = $request->input('seo_description');
         $seoKeywords = $request->input('seo_keywords');
-        $code = $request->input('code');
-        $price = $request->input('price');
-        $sale = $request->input('sale');
-        $finalSale = $request->input('final_price');
-        if (!IsNullOrEmptyString($price)) {
-            if (!IsNullOrEmptyString($sale)) {
-                $product->price = $price;
-                $product->sale = $sale;
-                $product->final_price = $finalSale;
-            } else {
-                $product->price = $price;
-                $product->sale = 0;
-                $product->final_price = 0;
+        $listLocation=$request->input('list_location');
+        $listImage = $request->input('image-choose');
+        $subImage = '';
+        if (count($listImage) != 0) {
+            foreach ($listImage as $key => $item) {
+                if (strpos($item, 'http') !== false)
+                    $subImage = $subImage . substr($item, strpos($item, 'images'), strlen($item) - 1) . ';';
+                else
+                    $subImage = $subImage . $item . ';';
             }
+            $product->sub_image = substr($subImage, 0, -1);
         } else {
-            $product->price = 0;
-            $product->sale = 0;
-            $product->final_price = 0;
+            $product->sub_image = '';
         }
-        if (!IsNullOrEmptyString($code)) {
-            $product->code = $code;
-        }
+//        $code = $request->input('code');
+//        $price = $request->input('price');
+//        $sale = $request->input('sale');
+//        $finalSale = $request->input('final_price');
+//        if (!IsNullOrEmptyString($price)) {
+//            if (!IsNullOrEmptyString($sale)) {
+//                $product->price = $price;
+//                $product->sale = $sale;
+//                $product->final_price = $finalSale;
+//            } else {
+//                $product->price = $price;
+//                $product->sale = 0;
+//                $product->final_price = 0;
+//            }
+//        } else {
+//            $product->price = 0;
+//            $product->sale = 0;
+//            $product->final_price = 0;
+//        }
+//        if (!IsNullOrEmptyString($code)) {
+//            $product->code = $code;
+//        }
 //        if (!IsNullOrEmptyString($price)) {
 //            $product->price = $price;
 //            if (!IsNullOrEmptyString($sale)) {
@@ -215,17 +242,17 @@ class ProductController extends Controller
 //            $product->sale = 0;
 //            $product->final_price=0;
 //        }
-        if (!IsNullOrEmptyString($order)) {
-            $product->order = $order;
-        }
+//        if (!IsNullOrEmptyString($order)) {
+//            $product->order = $order;
+//        }
         if (!IsNullOrEmptyString($isActive)) {
             $product->isActive = 1;
         } else {
             $product->isActive = 0;
         }
-        if (!IsNullOrEmptyString($description)) {
-            $product->description = $description;
-        }
+//        if (!IsNullOrEmptyString($description)) {
+//            $product->description = $description;
+//        }
         $product->seos->seo_title = $seoTitle;
         $product->seos->seo_description = $seoDescription;
         $product->seos->seo_keywords = $seoKeywords;
@@ -239,7 +266,8 @@ class ProductController extends Controller
         $product->category_product_id = $categoryPostID;
         $product->user_id = Auth::user()->id;
         $product->save();
-        return redirect()->route('product.index')->with('success', 'Tạo Mới Thành Công Sản Phẩm');
+        $product->locations()->sync($listLocation);
+        return redirect()->route('product.index')->with('success', 'Cập Nhật Thành Công Sản Phẩm');
     }
 
     /**
@@ -252,7 +280,9 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $product->seos->delete();
+        $product->locations()->detach();
         $product->delete();
+
         return redirect()->route('product.index')->with('success', 'Đã Xóa Thành Công');
     }
 

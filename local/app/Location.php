@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Location extends Model
 {
     protected $fillable = [
-        'id', 'name', 'image', 'created_at', 'updated_at'
+        'id', 'name','path', 'image', 'created_at', 'updated_at'
     ];
 
     public function products()

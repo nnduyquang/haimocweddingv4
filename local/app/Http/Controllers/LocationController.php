@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Location;
+use App\Seo;
 use Illuminate\Http\Request;
 
 class LocationController extends Controller
@@ -14,7 +15,7 @@ class LocationController extends Controller
      */
     public function index(Request $request)
     {
-        $locations = Location::orderBy('order', 'ASC')->paginate(5);
+        $locations = Location::orderBy('id', 'ASC')->paginate(5);
         return view('backend.admin.location.index', compact('locations'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
@@ -38,7 +39,8 @@ class LocationController extends Controller
     public function store(Request $request)
     {
         $location = new Location();
-        $name = $request->input('name');
+        $seo=new Seo();
+        $name = $request->input('title');
         $image = $request->input('image');
         $seoTitle = $request->input('seo_title');
         $seoDescription = $request->input('seo_description');
@@ -47,11 +49,13 @@ class LocationController extends Controller
             $image = substr($image, strpos($image, 'images'), strlen($image) - 1);
             $location->image = $image;
         }
+        $seo->seo_title= $seoTitle;
+        $seo->seo_description= $seoDescription;
+        $seo->seo_keywords= $seoKeywords;
+        $seo->save();
+        $location->seo_id=$seo->id;
         $location->name = $name;
-        $location->seos->seo_title = $seoTitle;
-        $location->seos->seo_description = $seoDescription;
-        $location->seos->seo_keywords = $seoKeywords;
-        $location->seos->save();
+        $location->path = chuyen_chuoi_thanh_path($name);
         $location->save();
         return redirect()->route('location.index')
             ->with('success', 'Tạo Mới Thành Công Địa Điểm');
@@ -90,20 +94,21 @@ class LocationController extends Controller
     public function update(Request $request, $id)
     {
         $location = Location::find($id);
-        $name = $request->input('name');
+        $name = $request->input('title');
         $image = $request->input('image');
         $seoTitle = $request->input('seo_title');
         $seoDescription = $request->input('seo_description');
         $seoKeywords=$request->input('seo_keywords');
-        $seo->seo_title= $seoTitle;
-        $seo->seo_description= $seoDescription;
-        $seo->seo_keywords= $seoKeywords;
-        $seo->save();
+        $location->seos->seo_title = $seoTitle;
+        $location->seos->seo_description = $seoDescription;
+        $location->seos->seo_keywords = $seoKeywords;
+        $location->seos->save();
         if ($image) {
             $image = substr($image, strpos($image, 'images'), strlen($image) - 1);
             $location->image = $image;
         }
         $location->name = $name;
+        $location->path = chuyen_chuoi_thanh_path($name);
         $location->save();
         return redirect()->route('location.index')
             ->with('success', 'Cập Nhật Thành Công Địa Điểm');
@@ -118,6 +123,7 @@ class LocationController extends Controller
     public function destroy($id)
     {
         $location = Location::find($id);
+        $location->products()->detach();
         $location->delete();
         return redirect()->route('location.index')
             ->with('success', 'Đã Xóa Địa Điểm Thành Công');

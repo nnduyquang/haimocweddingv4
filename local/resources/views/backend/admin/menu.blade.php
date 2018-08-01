@@ -20,9 +20,9 @@
             <li  class="nav-item"><a class="nav-link" href="{{ route('location.index') }}"><i class="fa fa-link"></i> <p>Địa Điểm</p></a>
             </li>
         <li  class="nav-item"><a class="nav-link" href="{{ route('categoryproduct.index') }}"><i class="fa fa-link"></i>
-                <p>Chuyên Mục Sản Phẩm</p></a>
+                <p>Loại Album</p></a>
         </li>
-        <li  class="nav-item"><a class="nav-link" href="{{ route('product.index') }}"><i class="fa fa-link"></i> <p>Sản Phẩm</p></a>
+        <li  class="nav-item"><a class="nav-link" href="{{ route('product.index') }}"><i class="fa fa-link"></i> <p>Album</p></a>
         </li>
         <li  class="nav-item"><a class="nav-link" href="{{ route('config.index') }}"><i class="fa fa-link"></i> <p>Cấu Hình</p></a>
         </li>

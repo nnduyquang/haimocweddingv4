@@ -73,5 +73,5 @@
             @endforeach
         </table>
     </div>
-    {{--{!! $pages->links() !!}--}}
+    {!! $locations->links() !!}
 @stop

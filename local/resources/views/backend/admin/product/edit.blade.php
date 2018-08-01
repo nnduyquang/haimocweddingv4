@@ -1,6 +1,6 @@
 @extends('backend.admin.master')
 @section('title-page')
-    Cập Nhật Sản Phẩm
+    Cập Nhật Album
 @stop
 @section('styles')
 @stop
@@ -10,7 +10,6 @@
     <div class="col-lg-12">
         <div class="row">
             <div class="col-md-8">
-                {{--<h2>Cập Nhật Sản Phẩm</h2>--}}
             </div>
             <div class="col-md-4 text-right">
                 <a class="btn btn-primary" href="{{ route('product.index') }}"> Back</a>
@@ -31,11 +30,43 @@
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
-                <strong>Tên Sản Phẩm:</strong>
+                <strong>Tên Album:</strong>
                 {!! Form::text('name',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
+                {{--<div class="form-group">--}}
+                    {{--<strong>Mô Tả Ngắn:</strong>--}}
+                    {{--{!! Form::textarea('description',null,array('placeholder' => '','id'=>'description-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}--}}
+                {{--</div>--}}
                 <div class="form-group">
-                    <strong>Mô Tả Ngắn:</strong>
-                    {!! Form::textarea('description',null,array('placeholder' => '','id'=>'description-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
+                    <strong>Địa Điểm</strong>
+                    <div class="location-info">
+                        @php
+                            $arrayLocationItem=$product->locations()->get();
+                        @endphp
+                        @foreach($locations as $key=>$item)
+                            <label class="check-container">
+                                {{$item->name}}
+                                @if(in_array($item->id,explode(',',$arrayLocationItem->implode('id',','))))
+                                    {{ Form::checkbox('list_location[]', $item->id, true, array('class' => '')) }}
+                                    <span class="check-mark"></span>
+                                @else
+                                    {{ Form::checkbox('list_location[]', $item->id, false, array('class' => '')) }}
+                                    <span class="check-mark"></span>
+                                @endif
+                            </label>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="form-group">
+                    <strong>Loại Album</strong>
+                    <select class="form-control" name="category_product">'
+                        @foreach($dd_category_products as $key=>$data) {
+                        @if($data['index']===$product->category_product_id)
+                            <option value="{{$data['index']}}" selected>{{$data['value']}}</option>
+                        @else
+                            <option value="{{$data['index']}}">{{$data['value']}}</option>
+                        @endif
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div class="col-md-6">
@@ -49,45 +80,51 @@
                     {{ Html::image($product->image,'',array('id'=>'showHinh','class'=>'show-image'))}}
                 </div>
                 <div class="form-group">
-                    <strong>Loại Sản Phẩm</strong>
-                    <select class="form-control" name="category_product">'
-                        @foreach($dd_category_products as $key=>$data) {
-                        @if($data['index']===$product->category_product_id)
-                            <option value="{{$data['index']}}" selected>{{$data['value']}}</option>
-                        @else
-                            <option value="{{$data['index']}}">{{$data['value']}}</option>
-                        @endif
-                        @endforeach
-                    </select>
+                    {!! Form::button('Thêm Hình Album', array('id' => 'btnBrowseMore','class'=>'btn btn-primary')) !!}
                 </div>
                 <div class="form-group">
-                    <strong>Mã Sản Phẩm</strong>
-                    {!! Form::text('code',null, array('placeholder' => 'Mã SP','class' => 'form-control')) !!}
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <strong>Giá: </strong>
-                            {!! Form::text('price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <strong>% Giảm Giá: </strong>
-                            {!! Form::text('sale',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <strong>Giá Giảm: </strong>
-                            {!! Form::text('final_price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
-                        </div>
+                    <div id="add-image" class="row">
+                        @php
+                            $listImage=explode(';',$product->sub_image);
+                        @endphp
+                        @foreach($listImage as $key=>$item)
+                            <div class="col-md-3 text-center one-image">
+                                {{ Html::image($item,'',array('id'=>'showHinh','class'=>'image-choose'))}}
+                                {{ Form::hidden('image-choose[]', $item) }}
+                                <span class='remove-image'>X</span>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
+
+                {{--<div class="form-group">--}}
+                    {{--<strong>Mã Sản Phẩm</strong>--}}
+                    {{--{!! Form::text('code',null, array('placeholder' => 'Mã SP','class' => 'form-control')) !!}--}}
+                {{--</div>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-4">--}}
+                        {{--<div class="form-group">--}}
+                            {{--<strong>Giá: </strong>--}}
+                            {{--{!! Form::text('price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-4">--}}
+                        {{--<div class="form-group">--}}
+                            {{--<strong>% Giảm Giá: </strong>--}}
+                            {{--{!! Form::text('sale',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-4">--}}
+                        {{--<div class="form-group">--}}
+                            {{--<strong>Giá Giảm: </strong>--}}
+                            {{--{!! Form::text('final_price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
         <div class="col-md-12 p-0">
-            <strong>Mô Tả Sản Phẩm:</strong>
+            <strong>Mô Tả Album:</strong>
             {!! Form::textarea('content',null,array('placeholder' => '','id'=>'content-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
 
         </div>
@@ -126,7 +163,7 @@
                    type="checkbox" data-toggle="toggle">
         </div>
         <div class="col-md-12" style="text-align:  center;">
-            <button id="btnDanhMuc" type="submit" class="btn btn-primary">Cập Nhật Sản Phẩm</button>
+            <button id="btnDanhMuc" type="submit" class="btn btn-primary">Cập Nhật Album</button>
         </div>
     {!! Form::close() !!}
 @stop
