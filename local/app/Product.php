@@ -21,4 +21,8 @@ class Product extends Model
     public function seos(){
         return $this->belongsTo('App\Seo','seo_id');
     }
+    public function locations()
+    {
+        return $this->belongsToMany('App\Location', 'location_album', 'product_id', 'location_id')->withTimestamps();
+    }
 }

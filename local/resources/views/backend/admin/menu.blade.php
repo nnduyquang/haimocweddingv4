@@ -17,6 +17,8 @@
         </li>
         <li  class="nav-item"><a class="nav-link" href="{{ route('post.index') }}"><i class="fa fa-link"></i> <p>Bài Viết</p></a>
         </li>
+            <li  class="nav-item"><a class="nav-link" href="{{ route('location.index') }}"><i class="fa fa-link"></i> <p>Địa Điểm</p></a>
+            </li>
         <li  class="nav-item"><a class="nav-link" href="{{ route('categoryproduct.index') }}"><i class="fa fa-link"></i>
                 <p>Chuyên Mục Sản Phẩm</p></a>
         </li>
