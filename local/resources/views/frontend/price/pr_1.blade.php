@@ -18,26 +18,100 @@
                         <div class="card-body">
                             <div class="plan">
                                 <h4 class="title">
-                                    Pre wedding studio photo shoot with one kimono one kimono one kimono
+                                    Gói phim trường (basic)
                                 </h4>
                                 <p class="price">
-                                    <span>68,000 yen</span> +tax
+                                    <span>4.500.000</span>
                                 </p>
                                 <p class="detail">
-                                    One kimono for bride and one kimono for groom
+                                    Thời gian chụp: 1 tiếng
                                 </p>
                                 <div class="content">
-                                    <h5>Contents of the plan</h5>
+                                    <h5>Chi tiết kế hoạch</h5>
                                     <ul>
-                                        <li>white kimono, colourful kimono or long sleeved kimono</li>
-                                        <li>kimono for groom</li>
-                                        <li>traditional items for kimono</li>
-                                        <li>socks and underwears for dressing</li>
-                                        <li>[For bride] dressing/hair set/full make-up *hair ornaments is included<br>
-                                            [For groom] dressing/hair set
-                                        </li>
-                                        <li>studio shooting</li>
-                                        <li>at least 100 photos data</li>
+                                        <li>1 váy cưới+1 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (20 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                    (Giá đã bao gồm vé vào cổng)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói phim trường (VIP)
+                                </h4>
+                                <p class="price">
+                                    <span>6.000.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 2 tiếng
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>2 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (20 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                    (Giá đã bao gồm vé vào cổng)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng (basic)
+                                </h4>
+                                <p class="price">
+                                    <span>6.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: Nửa Ngày
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>2 váy cưới+1 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (20 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,31 +131,621 @@
                         <div class="card-body">
                             <div class="plan">
                                 <h4 class="title">
-                                    Pre wedding studio photo shoot with two kimonos
+                                    Gói Đà Nẵng (VIP)
                                 </h4>
                                 <p class="price">
-                                    <span>68,000 yen</span> +tax
+                                    <span>8.000.000</span>
                                 </p>
                                 <p class="detail">
-                                    One kimono for bride and one kimono for groom
+                                    Thời gian chụp: 6h đến 17h
                                 </p>
                                 <div class="content">
-                                    <h5>Contents of the plan</h5>
+                                    <h5>Chi tiết kế hoạch</h5>
                                     <ul>
-                                        <li>white kimono, colourful kimono or long sleeved kimono</li>
-                                        <li>kimono for groom</li>
-                                        <li>traditional items for kimono</li>
-                                        <li>socks and underwears for dressing</li>
-                                        <li>[For bride] dressing/hair set/full make-up *hair ornaments is included<br>
-                                            [For groom] dressing/hair set
-                                        </li>
-                                        <li>studio shooting</li>
-                                        <li>at least 100 photos data</li>
-                                        <li>studio shooting</li>
-                                        <li>at least 100 photos data</li>
-                                        <li>studio shooting</li>
-                                        <li>at least 100 photos data</li>
+                                        <li>2 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Hội An (basic)
+                                </h4>
+                                <p class="price">
+                                    <span>7.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>2 váy cưới+1 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (20 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Hội An (VIP)
+                                </h4>
+                                <p class="price">
+                                    <span>9.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Bà Nà (basic)
+                                </h4>
+                                <p class="price">
+                                    <span>7.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>2 váy cưới+1 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (20 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Bà Nà (VIP)
+                                </h4>
+                                <p class="price">
+                                    <span>9.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Bà Nà - Hội An (basic)
+                                </h4>
+                                <p class="price">
+                                    <span>9.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>2 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Bà Nà - Hội An (VIP)
+                                </h4>
+                                <p class="price">
+                                    <span>10.900.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Đồi Chè (basic)
+                                </h4>
+                                <p class="price">
+                                    <span>8.000.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>2 váy cưới+1 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Đồi Chè (VIP)
+                                </h4>
+                                <p class="price">
+                                    <span>9.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+1 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Đèo Hải Vân - Lăng Cô (basic)
+                                </h4>
+                                <p class="price">
+                                    <span>9.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>2 váy cưới+1 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>01 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói Đà Nẵng - Đèo Hải Vân - Lăng Cô (vip)
+                                </h4>
+                                <p class="price">
+                                    <span>11.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 6h đến 17h
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (40 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói 4 địa điểm (Đà Nẵng, Hội An, Đồi Chè, Bà Nà, Lăng Cô...)
+                                </h4>
+                                <p class="price">
+                                    <span>13.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 1 Ngày
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (40 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Gói 4 địa điểm (Đà Nẵng, Hội An, Đồi Chè, Bà Nà, Lăng Cô...)
+                                </h4>
+                                <p class="price">
+                                    <span>16.900.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 1 Ngày
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>4 váy cưới+3 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (60 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Đảo Lý Sơn
+                                </h4>
+                                <p class="price">
+                                    <span>21.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 2 Ngày
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                    (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Lý Sơn, ăn ở khách sạn 1 đêm)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Quy Nhơn
+                                </h4>
+                                <p class="price">
+                                    <span>21.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 2 Ngày
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                    (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Quy Nhơn, ăn ở khách sạn 1 đêm)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                    Đà Lạt
+                                </h4>
+                                <p class="price">
+                                    <span>21.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 2 Ngày
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                    (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Quy Nhơn, ăn ở khách sạn 1 đêm)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="booking">
+                                <a href="#">Book Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card one-item h-100">
+                        <div class="img-item">
+                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                        </div>
+                        <div class="card-body">
+                            <div class="plan">
+                                <h4 class="title">
+                                   Nha Trang
+                                </h4>
+                                <p class="price">
+                                    <span>21.500.000</span>
+                                </p>
+                                <p class="detail">
+                                    Thời gian chụp: 2 Ngày
+                                </p>
+                                <div class="content">
+                                    <h5>Chi tiết kế hoạch</h5>
+                                    <ul>
+                                        <li>3 váy cưới+2 veston+1 áo dài</li>
+                                        <li>01 album 30x30cm (30 trang)</li>
+                                        <li>02 ảnh nhà hàng 60x90cm</li>
+                                        <li>dvd ảnh gốc + dvd slide</li>
+                                        <li>makeup + làm tóc trong ngày</li>
+                                        <li>hoa cầm tay, phụ kiện cưới</li>
+                                        <li>xe 16 chỗ trong ngày chụp</li>
+                                    </ul>
+                                    (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Quy Nhơn, ăn ở khách sạn 1 đêm)
                                 </div>
                             </div>
                         </div>
