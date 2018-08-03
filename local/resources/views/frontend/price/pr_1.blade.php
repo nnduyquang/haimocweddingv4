@@ -13,7 +13,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/1.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -51,7 +51,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/14.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -89,7 +89,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/2.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -126,7 +126,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/13.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -163,7 +163,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/3.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -200,7 +200,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/31.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -237,7 +237,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/4.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -274,7 +274,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/15.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -311,7 +311,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/5.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -348,7 +348,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/12.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -385,7 +385,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/6.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -422,7 +422,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/6.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -459,7 +459,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/7.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -496,7 +496,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/11.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -533,7 +533,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/8.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -570,7 +570,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/8.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -607,7 +607,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/9.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -645,7 +645,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/9.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -683,7 +683,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/9.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -721,12 +721,12 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/album/huytram/NAMZ1912-min.png','',array('class'=>'')) }}
+                            {{ Html::image('images/price/10.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
                                 <h4 class="title">
-                                   Nha Trang
+                                    Nha Trang
                                 </h4>
                                 <p class="price">
                                     <span>21.500.000</span>

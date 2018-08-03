@@ -1570,6 +1570,9 @@ This class is added to the container
 #pr_1 .info .one-item .plan h4.title {
   font-size: 20px;
   height: 35px;
+  text-transform: uppercase;
+  color: #08327E;
+  font-weight: bold;
 }
 
 #pr_1 .info .one-item .plan p.price {
