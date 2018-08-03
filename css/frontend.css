@@ -1710,3 +1710,76 @@ This class is added to the container
     text-align: center;
   }
 }
+
+#po_1 .main-img img {
+  width: 100%;
+  height: auto;
+}
+
+#po_1 .main-title {
+  background-color: #f4f4f4;
+}
+
+#po_1 .main-title .icon-title {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 21px;
+}
+
+#po_1 .main-title h1 {
+  text-align: center;
+  line-height: 30px;
+  color: #968266;
+  text-transform: Capitalize;
+  font-size: 36px;
+  padding: 15px 0px 15px 0px;
+}
+
+#po_1 .description {
+  margin: 40px 0;
+  line-height: 1.5;
+}
+
+#po_1 .content {
+  line-height: 1.5;
+}
+
+#po_1 .other {
+  padding: 60px 0;
+}
+
+#po_1 .other h4 {
+  color: #08327E;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9dcdd;
+  padding-bottom: 10px;
+}
+
+#po_1 .one-item h2.title {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding: 34px 0 10px;
+  position: relative;
+  color: #202020;
+  letter-spacing: 3px;
+}
+
+#po_1 .one-item h2.title a {
+  text-decoration: none;
+  color: #202020;
+  text-transform: uppercase;
+}
+
+#po_1 .one-item .bottom a {
+  color: #666666;
+}
+
+#po_1 .one-item .bottom a p {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  padding: 10px 0 0;
+}

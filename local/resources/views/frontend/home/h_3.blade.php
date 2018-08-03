@@ -9,9 +9,9 @@
                             {{ Html::image('images/temps/home/introduct1.jpg','',array('class'=>'')) }}
                         </a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" style="background-color: white">
                        <p>
-                           Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!
+                           Ảnh cưới Đẹp Lạ - Tinh Tế - Sang Trọng.<br> Tận tâm vì một sản phẩm hơn ngàn lời nói. Cùng bạn đi bất cứ đâu, sáng tạo không giới hạn.
                        </p>
                     </div>
                 </div>
@@ -24,9 +24,9 @@
                             {{ Html::image('images/temps/home/introduct2.jpg','',array('class'=>'')) }}
                         </a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" style="background-color: white">
                         <p>
-                            Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!
+                            Ngày cưới luôn là ngày trọng đại nhất của cuộc đời. Chính vì thế Sea Wedding mong muốn là 1 phần để chọn tư vấn cho CDCR một bộ cánh thật lộng lẫy nhất, tạo nên ngày thật đáng nhớ và hạnh phúc.
                         </p>
                     </div>
                 </div>
@@ -39,9 +39,9 @@
                             {{ Html::image('images/temps/home/introduct3.jpg','',array('class'=>'')) }}
                         </a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" style="background-color: white">
                         <p>
-                            Thank you for choosing Cosmo Theme and purchasing one of our Premium WordPress Themes. Your choice is highly appreciated!
+                            Ngày cưới không thể thiếu đi một bộ ảnh truyền thống, hay theo kiểu phóng sự và chúng tôi với đội ngũ chuyên nghiệp sẽ giúp bạn thực hiện điều đó một cách trọn vẹn nhất !
                         </p>
                     </div>
                 </div>

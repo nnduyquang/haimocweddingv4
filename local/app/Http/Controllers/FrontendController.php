@@ -20,9 +20,16 @@ class FrontendController extends Controller
         return view('frontend.home.index', compact('data'));
     }
 
-    public function getAlbumDetail($path){
+    public function getAlbumDetail($path)
+    {
         $data = $this->frontendRepository->getAlbumDetail($path);
         return view('frontend.album.index', compact('data'));
+    }
+
+    public function getPostDetail($path)
+    {
+        $data = $this->frontendRepository->getPostDetail($path);
+        return view('frontend.post.index', compact('data'));
     }
 
 

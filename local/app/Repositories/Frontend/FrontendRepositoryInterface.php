@@ -8,6 +8,7 @@ interface FrontendRepositoryInterface
 
     public function getAlbumDetail($path);
 
+    public function getPostDetail($path);
 
     public function getFrontEndInfo();
 }

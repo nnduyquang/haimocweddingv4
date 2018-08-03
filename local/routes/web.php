@@ -11,10 +11,11 @@ Route::get('/bang-gia', function () {
 Route::get('/lien-he', function () {
     return view('frontend.contact.index');
 });
+
 Route::get('/album/{path}', 'FrontendController@getAlbumDetail');
-//Route::get('/album/huy-tram', function () {
-//    return view('frontend.album.index');
-//});
+Route::get('/tin-tuc/{path}', 'FrontendController@getPostDetail');
+
+
 Route::post('/tim-kiem','FrontendController@getSearch')->name('search');
 Route::get('/admin/sml_login', 'AuthController@checklogin');
 Route::post('sml_login', 'AuthController@login')->name('login');
