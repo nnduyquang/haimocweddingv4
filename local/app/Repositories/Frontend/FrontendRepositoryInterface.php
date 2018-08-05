@@ -11,4 +11,6 @@ interface FrontendRepositoryInterface
     public function getPostDetail($path);
 
     public function getFrontEndInfo();
+
+    public function getAllAlbum();
 }

@@ -1635,6 +1635,11 @@ This class is added to the container
   background-color: #ff6d00;
 }
 
+#cont_1 .main-img img {
+  width: 100%;
+  height: auto;
+}
+
 #cont_1 .main-title {
   background-color: #f4f4f4;
   margin-bottom: 60px;

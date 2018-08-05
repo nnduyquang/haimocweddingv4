@@ -15,14 +15,15 @@
                                 <h2 class="title card-title"><a href="{{URL::to('tin-tuc/'.$item->path)}}">{{$item->title}}
                                     </a>
                                 </h2>
+                                <div class="bottom">
+                                    <a href="{{URL::to('tin-tuc/'.$item->path)}}">
+                                        <p>
+                                            {!! $item->description !!}
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="bottom card-footer">
-                                <a href="{{URL::to('tin-tuc/'.$item->path)}}">
-                                    <p>
-                                        {!! $item->description !!}
-                                    </p>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
                 @endforeach

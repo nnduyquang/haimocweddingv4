@@ -13,14 +13,9 @@
                 <div class="col-md-2 text-name">Khu Vực</div>
                 <div class="col-md-10">
                     <ul class="list-location">
-                        <li><a href="#">DD1</a></li>
-                        <li><a href="#">DD1</a></li>
-                        <li><a href="#">DD1</a></li>
-                        <li><a href="#">DD1</a></li>
-                        <li><a href="#">DD1</a></li>
-                        <li><a href="#">DD1</a></li>
-                        <li><a href="#">DD1</a></li>
-                        <li><a href="#">DD1</a></li>
+                        @foreach($data['locations'] as $key=>$item)
+                            <li><a href="{{URL::to('dia-diem/'.$item->path)}}">{{$item->name}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -29,70 +24,19 @@
     <div class="list-album">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card one-item h-100">
-                        <a class="img-item"
-                           href="{{URL::to('album/huy-tram')}}">  {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}</a>
-                        <div class="card-body plan-box">
-                            <div class="inner">
-                                <h3 class="title"><a href="{{URL::to('album/huy-tram')}}">Huy Trâm</a></h3>
+                @foreach($data['albums'] as $key=>$item)
+                    <div class="col-md-4 mb-4">
+                        <div class="card one-item h-100">
+                            <a class="img-item"
+                               href="{{URL::to('album/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>
+                            <div class="card-body plan-box">
+                                <div class="inner">
+                                    <h3 class="title"><a href="{{URL::to('album/huy-tram')}}">{{$item->name}}</a></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card one-item h-100">
-                        <a class="img-item"
-                           href="#">  {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}</a>
-                        <div class="card-body plan-box">
-                            <div class="inner">
-                                <h3 class="title"><a href="#">Huy Trâm</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card one-item h-100">
-                        <a class="img-item"
-                           href="#">  {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}</a>
-                        <div class="card-body plan-box">
-                            <div class="inner">
-                                <h3 class="title"><a href="#">Huy Trâm</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card one-item h-100">
-                        <a class="img-item"
-                           href="#">  {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}</a>
-                        <div class="card-body plan-box">
-                            <div class="inner">
-                                <h3 class="title"><a href="#">Huy Trâm</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div><div class="col-md-4 mb-4">
-                    <div class="card one-item h-100">
-                        <a class="img-item"
-                           href="#">  {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}</a>
-                        <div class="card-body plan-box">
-                            <div class="inner">
-                                <h3 class="title"><a href="#">Huy Trâm</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div><div class="col-md-4 mb-4">
-                    <div class="card one-item h-100">
-                        <a class="img-item"
-                           href="{{URL::to('album/huy-tram')}}">  {{ Html::image('images/album/huytram/NAMZ1824-min.png','',array('class'=>'')) }}</a>
-                        <div class="card-body plan-box">
-                            <div class="inner">
-                                <h3 class="title"><a href="{{URL::to('album/huy-tram')}}">Huy Trâm</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

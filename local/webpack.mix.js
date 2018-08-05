@@ -66,6 +66,7 @@ mix
         'resources/assets/js/be.menu.js',
         'resources/assets/js/be.categoryproduct.js',
         'resources/assets/js/be.product.js',
+        'resources/assets/js/be.config.email.js',
     ], '../js/backend.js')
     // .copy([
     //     'bower_components/font-awesome/web-fonts-with-css/webfonts/**'

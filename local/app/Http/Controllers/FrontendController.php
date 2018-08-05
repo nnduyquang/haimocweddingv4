@@ -32,6 +32,11 @@ class FrontendController extends Controller
         return view('frontend.post.index', compact('data'));
     }
 
+    public function getAllAlbum(){
+        $data = $this->frontendRepository->getAllAlbum();
+        return view('frontend.collection.index', compact('data'));
+    }
+
 
 }
 

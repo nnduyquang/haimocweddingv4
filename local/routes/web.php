@@ -13,6 +13,7 @@ Route::get('/lien-he', function () {
 });
 
 Route::get('/album/{path}', 'FrontendController@getAlbumDetail');
+Route::get('/album/', 'FrontendController@getAllAlbum');
 Route::get('/tin-tuc/{path}', 'FrontendController@getPostDetail');
 
 
@@ -93,19 +94,14 @@ Route::group(['middleware' => ['auth']], function () {
     Route::patch('sml_admin/dia-diem/{id}', ['as' => 'location.update', 'uses' => 'LocationController@update', 'middleware' => ['permission:product-edit']]);
     Route::delete('sml_admin/dia-diem/{id}', ['as' => 'location.destroy', 'uses' => 'LocationController@destroy', 'middleware' => ['permission:location-delete']]);
 
-    //MENU
+    //CONFIG
+    //------GENERAL
+    Route::get('sml_admin/config/', ['as' => 'config.general.index', 'uses' => 'ConfigGeneralController@getConfig']);
+    Route::post('sml_admin/config/', ['as' => 'config.general.store', 'uses' => 'ConfigGeneralController@saveConfig']);
+    //-------EMAIL
 
-
-    Route::get('sml_admin/menu','MenuController@loadMenuIndex' )->name('menu.index');
-    Route::get('sml_admin/find/{id}','MenuController@findMenuById' );
-    Route::get('sml_admin/updateNodeFamily/{id}/{parentId}','MenuController@updateNodeFamily' );
-    Route::post('sml_admin/menu-create','MenuController@createNewMenu' )->name('menu.store');
-    Route::patch('sml_admin/menu-update/{id}','MenuController@updateMenu' )->name('menu.update');
-    Route::get('sml_admin/load-tree','MenuController@loadTreeMenu');
-    Route::delete('sml_admin/menu-delete/{id}','MenuController@deleteMenu');
-
-    Route::get('sml_admin/config/', ['as' => 'config.index', 'uses' => 'ConfigController@getConfig']);
-    Route::post('sml_admin/config/', ['as' => 'config.store', 'uses' => 'ConfigController@saveConfig']);
+    Route::get('sml_admin/config/email', ['as' => 'config.email.index', 'uses' => 'ConfigEmailController@getEmailConfig']);
+    Route::post('sml_admin/config/email', ['as' => 'config.email.store', 'uses' => 'ConfigEmailController@saveEmailConfig']);
 
 
 });
