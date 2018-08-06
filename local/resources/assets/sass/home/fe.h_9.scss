@@ -23,6 +23,7 @@
     }
   }
   .info {
+    margin-bottom: 100px;
     .info-left, .info-right {
       img {
         padding-top: 40%;
@@ -53,6 +54,18 @@
       }
     }
   }
+  .content{
+    .title{
+      text-align: center;
+      font-size: 30px;
+      color: $main-color;
+      margin-bottom: 40px;
+    }
+    .description{
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  }
   .contact {
     text-align: center;
     a {
@@ -61,6 +74,26 @@
       border-radius: 20px;
       color: white;
       text-transform: uppercase;
+    }
+  }
+}
+@media (max-width: 767px){
+  #h_9 {
+    .info{
+      margin-bottom: 20px;
+      .info-left, .info-right {
+        .info-content {
+          h4 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .content{
+      .title{
+        font-size: 24px;
+        line-height: 1.3;
+      }
     }
   }
 }

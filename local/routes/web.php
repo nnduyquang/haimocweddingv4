@@ -2,9 +2,6 @@
 
 
 Route::get('/', 'FrontendController@getFrontend');
-Route::get('/album', function () {
-    return view('frontend.collection.index');
-});
 Route::get('/bang-gia', function () {
     return view('frontend.price.index');
 });
@@ -14,7 +11,8 @@ Route::get('/lien-he', function () {
 
 Route::get('/album/{path}', 'FrontendController@getAlbumDetail');
 Route::get('/album/', 'FrontendController@getAllAlbum');
-Route::get('/tin-tuc/{path}', 'FrontendController@getPostDetail');
+Route::get('/tin-tuc/{path}', 'FrontendController@getPostDetail')->defaults('type','tin-tuc');
+Route::get('/khuyen-mai', 'FrontendController@getPostDetail')->defaults('path','')->defaults('type','khuyen-mai');
 
 
 Route::post('/tim-kiem','FrontendController@getSearch')->name('search');

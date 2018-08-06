@@ -26,9 +26,9 @@ class FrontendController extends Controller
         return view('frontend.album.index', compact('data'));
     }
 
-    public function getPostDetail($path)
+    public function getPostDetail($path,$type)
     {
-        $data = $this->frontendRepository->getPostDetail($path);
+        $data = $this->frontendRepository->getPostDetail($path,$type);
         return view('frontend.post.index', compact('data'));
     }
 

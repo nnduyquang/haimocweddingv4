@@ -55,8 +55,8 @@
                                                                             aria-hidden="true"></i></a>
     </div>
 </div>
-<div class="mess_desk_bot d-none d-md-block" style="position: fixed;bottom:40px;right: 0px;z-index: 2">
-    <a href="tel:0962599482" style="display: block;width: 260px;height: 56px;background: url({{URL::to('images/nenhot.png')}}) no-repeat;text-align: center;padding-top: 10px;color:#fff;font-size: 20px;font-family: 'roboto-bold'">
+<div class="mess_desk_bot d-none d-md-block">
+    <a href="tel:0902710212" class="hotline-master"> 0902.710.212
     </a>
 </div>
 

@@ -246,6 +246,25 @@ img {
   background-color: #ff6d00;
 }
 
+.mess_desk_bot {
+  position: fixed;
+  bottom: 58px;
+  right: 27px;
+  z-index: 2;
+}
+
+.mess_desk_bot a.hotline-master {
+  border-top: 2px #00bbff solid;
+  background-color: #08327E;
+  color: white;
+  padding: 7px;
+  border-radius: 12px;
+  padding-left: 70px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 #menu {
   position: absolute;
   z-index: 99;
@@ -700,6 +719,17 @@ This class is added to the container
   letter-spacing: 2px;
 }
 
+@media (max-width: 767px) {
+  #h_1 .one-item {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #h_1 .info-group {
+    text-align: center;
+  }
+}
+
 #h_2 .info {
   padding: 100px 0;
 }
@@ -764,6 +794,18 @@ This class is added to the container
 
 #h_2 img.img-h_2 {
   height: auto;
+}
+
+@media (max-width: 767px) {
+  #h_2 .info {
+    padding: 50px 0;
+  }
+  #h_2 .info p.sub-intro {
+    padding: 0;
+  }
+  #h_2 .info p.sub-intro:before, #h_2 .info p.sub-intro:after {
+    width: 0;
+  }
 }
 
 #h_3 {
@@ -1233,6 +1275,12 @@ This class is added to the container
   color: white;
 }
 
+@media (max-width: 767px) {
+  #h_8 .video-wrap .description h2 {
+    font-size: 24px;
+  }
+}
+
 #h_9 {
   margin-bottom: 60px;
 }
@@ -1259,6 +1307,10 @@ This class is added to the container
   left: 50%;
   margin-left: -35px;
   content: '';
+}
+
+#h_9 .info {
+  margin-bottom: 100px;
 }
 
 #h_9 .info .info-left img, #h_9 .info .info-right img {
@@ -1291,6 +1343,18 @@ This class is added to the container
   z-index: 3;
 }
 
+#h_9 .content .title {
+  text-align: center;
+  font-size: 30px;
+  color: #08327E;
+  margin-bottom: 40px;
+}
+
+#h_9 .content .description {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
 #h_9 .contact {
   text-align: center;
 }
@@ -1301,6 +1365,19 @@ This class is added to the container
   border-radius: 20px;
   color: white;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  #h_9 .info {
+    margin-bottom: 20px;
+  }
+  #h_9 .info .info-left .info-content h4, #h_9 .info .info-right .info-content h4 {
+    font-size: 14px;
+  }
+  #h_9 .content .title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
 }
 
 #al_1 .main-img img {
@@ -1761,7 +1838,7 @@ This class is added to the container
   padding-bottom: 10px;
 }
 
-#po_1 .one-item h2.title {
+#po_1 .other .one-item h2.title {
   display: block;
   font-size: 14px;
   line-height: 24px;
@@ -1772,19 +1849,53 @@ This class is added to the container
   letter-spacing: 3px;
 }
 
-#po_1 .one-item h2.title a {
+#po_1 .other .one-item h2.title a {
   text-decoration: none;
   color: #202020;
   text-transform: uppercase;
 }
 
-#po_1 .one-item .bottom a {
+#po_1 .other .one-item .bottom a {
   color: #666666;
 }
 
-#po_1 .one-item .bottom a p {
+#po_1 .other .one-item .bottom a p {
   font-size: 12px;
   line-height: 24px;
   margin: 0;
   padding: 10px 0 0;
+}
+
+#po_1 .album {
+  padding: 60px 0;
+}
+
+#po_1 .album h4 {
+  color: #08327E;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9dcdd;
+  padding-bottom: 10px;
+}
+
+#po_1 .album .one-item {
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#po_1 .album .one-item:hover {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+}
+
+#po_1 .album .one-item .img-cover a img {
+  border-radius: 20px 20px 0 0;
+}
+
+#po_1 .album .one-item span.title {
+  display: block;
+  padding: 20px;
 }

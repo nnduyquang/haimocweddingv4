@@ -157,102 +157,20 @@
         <div class="other">
             <h4>Album mới nhất <i class="far fa-heart"></i></h4>
             <div class="row">
+                @foreach($data['order'] as $key=>$item)
                 <div class="col-md-3 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
+                            <a href="{{URL::to('album/'.$item->path)}}">
+                                {{ Html::image($item->image,'',array('class'=>'')) }}
                             </a>
                         </div>
                         <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
+                            <span class="title">{{$item->name}}</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card one-item h-100">
-                        <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card one-item h-100">
-                        <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card one-item h-100">
-                        <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card one-item h-100">
-                        <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card one-item h-100">
-                        <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card one-item h-100">
-                        <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card one-item h-100">
-                        <div class="img-cover">
-                            <a href="#">
-                                {{ Html::image('images/album/huytram/NAMZ2188-min.png','',array('class'=>'')) }}
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <span class="title">SOO AVENUE</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
