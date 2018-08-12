@@ -34,8 +34,8 @@
                 <strong>Tên Album:</strong>
                 {!! Form::text('name',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
                 {{--<div class="form-group">--}}
-                    {{--<strong>Mô Tả Ngắn:</strong>--}}
-                    {{--{!! Form::textarea('description',null,array('placeholder' => '','id'=>'description-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}--}}
+                {{--<strong>Mô Tả Ngắn:</strong>--}}
+                {{--{!! Form::textarea('description',null,array('placeholder' => '','id'=>'description-page','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}--}}
                 {{--</div>--}}
                 <div class="form-group">
                     <strong>Loại Album</strong>
@@ -74,28 +74,28 @@
                 </div>
 
                 {{--<div class="form-group">--}}
-                    {{--<strong>Mã Sản Phẩm</strong>--}}
-                    {{--{!! Form::text('code',null, array('placeholder' => 'Mã SP','class' => 'form-control')) !!}--}}
+                {{--<strong>Mã Sản Phẩm</strong>--}}
+                {{--{!! Form::text('code',null, array('placeholder' => 'Mã SP','class' => 'form-control')) !!}--}}
                 {{--</div>--}}
                 {{--<div class="row">--}}
-                    {{--<div class="col-md-4">--}}
-                        {{--<div class="form-group">--}}
-                            {{--<strong>Giá: </strong>--}}
-                            {{--{!! Form::text('price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-4">--}}
-                        {{--<div class="form-group">--}}
-                            {{--<strong>% Giảm Giá: </strong>--}}
-                            {{--{!! Form::text('sale',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-4">--}}
-                        {{--<div class="form-group">--}}
-                            {{--<strong>Giá Giảm: </strong>--}}
-                            {{--{!! Form::text('final_price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
+                {{--<div class="col-md-4">--}}
+                {{--<div class="form-group">--}}
+                {{--<strong>Giá: </strong>--}}
+                {{--{!! Form::text('price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-md-4">--}}
+                {{--<div class="form-group">--}}
+                {{--<strong>% Giảm Giá: </strong>--}}
+                {{--{!! Form::text('sale',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-md-4">--}}
+                {{--<div class="form-group">--}}
+                {{--<strong>Giá Giảm: </strong>--}}
+                {{--{!! Form::text('final_price',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}--}}
+                {{--</div>--}}
+                {{--</div>--}}
                 {{--</div>--}}
             </div>
         </div>
@@ -130,9 +130,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 form-group">
-            <strong>Kích Hoạt:</strong>
-            <input name="is_active" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
+        <div class="row">
+            <div class="col-md-4 form-group">
+                <strong>Kích Hoạt:</strong>
+                <input name="is_active" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
+            </div>
+            <div class="col-md-4 form-group">
+                <strong>Trang chủ?</strong>
+                <input name="is_hot" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
+            </div>
+            <div class="col-md-4 form-group row">
+                <label class="col-sm-3 col-form-label">Thứ tự: </label>
+                <div class="col-sm-9">
+                    {!! Form::text('order',null, array('placeholder' => 'Thứ Tự','class' => 'form-control')) !!}
+                </div>
+            </div>
         </div>
         <div class="col-md-12" style="text-align:  center;">
             <button id="btnDanhMuc" type="submit" class="btn btn-primary">Tạo Mới Album</button>

@@ -65,6 +65,8 @@ class ProductController extends Controller
         $content = $request->input('content');
 //        $order = $request->input('order');
         $isActive = $request->input('is_active');
+        $isHot = $request->input('is_hot');
+        $order = $request->input('order');
         $categoryPostID = $request->input('category_product');
         $seoTitle = $request->input('seo_title');
         $seoDescription = $request->input('seo_description');
@@ -107,6 +109,14 @@ class ProductController extends Controller
             $product->isActive = 1;
         } else {
             $product->isActive = 0;
+        }
+        if (!IsNullOrEmptyString($isHot)) {
+            $product->is_hot = 1;
+        } else {
+            $product->is_hot = 0;
+        }
+        if (!IsNullOrEmptyString($order)) {
+            $product->order = $order;
         }
 //        if (!IsNullOrEmptyString($description)) {
 //            $product->description = $description;
@@ -187,6 +197,8 @@ class ProductController extends Controller
         $content = $request->input('content');
 //        $order = $request->input('order');
         $isActive = $request->input('is_active');
+        $isHot = $request->input('is_hot');
+        $order = $request->input('order');
         $categoryPostID = $request->input('category_product');
         $seoTitle = $request->input('seo_title');
         $seoDescription = $request->input('seo_description');
@@ -249,6 +261,14 @@ class ProductController extends Controller
             $product->isActive = 1;
         } else {
             $product->isActive = 0;
+        }
+        if (!IsNullOrEmptyString($isHot)) {
+            $product->is_hot = 1;
+        } else {
+            $product->is_hot = 0;
+        }
+        if (!IsNullOrEmptyString($order)) {
+            $product->order = $order;
         }
 //        if (!IsNullOrEmptyString($description)) {
 //            $product->description = $description;
