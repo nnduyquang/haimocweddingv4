@@ -26,7 +26,11 @@ $('#btnBrowseMore').click(function () {
             });
         }
     };
-    window.open('http://localhost:8080/haimocweddingv4/js/kcfinder/browse.php?type=images',
+    // window.open('http://localhost:8080/haimocweddingv4/js/kcfinder/browse.php?type=images',
+    //     'kcfinder_multiple', 'status=0, toolbar=0, location=0, menubar=0, ' +
+    //     'directories=0, resizable=1, scrollbars=0, width=800, height=600'
+    // );
+    window.open('http://seawedding.net/js/kcfinder/browse.php?type=images',
         'kcfinder_multiple', 'status=0, toolbar=0, location=0, menubar=0, ' +
         'directories=0, resizable=1, scrollbars=0, width=800, height=600'
     );
