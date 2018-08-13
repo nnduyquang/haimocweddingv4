@@ -19,9 +19,9 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::orderBy('id', 'DESC')->paginate(5);
+        $products = Product::orderBy('is_hot','DESC')->orderBy('order', 'DESC')->get();
         $products->makeVisible('id');
-        return view('backend.admin.product.index', compact('products'))->with('i', ($request->input('page', 1) - 1) * 5);
+        return view('backend.admin.product.index', compact('products'));
     }
 
     /**

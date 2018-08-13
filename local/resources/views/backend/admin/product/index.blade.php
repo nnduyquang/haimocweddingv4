@@ -72,7 +72,7 @@
         <div class="col-md-12">
             <table class="table table-bordered">
                 <tr>
-                    <th>TT</th>
+                    {{--<th>TT</th>--}}
                     <th></th>
                     <th>Tên Sản Phẩm</th>
                     <th>Hình</th>
@@ -81,10 +81,11 @@
                     <th>Ngày Đăng</th>
                     <th>Ngày Cập Nhật</th>
                     <th>Tình Trạng</th>
+                    <th>Hot</th>
                     <th width="280px">Action</th>
                 </tr>
                 @foreach ($products as $key => $data)
-                    <td>{{ ++$i }}</td>
+                    {{--<td>{{ ++$i }}</td>--}}
                     <td>{{Form::checkbox('id[]',$data->id)}}</td>
                     <td>{{ $data->name }}</td>
                     <td>{{Html::image($data->image,'',array('class'=>'product-img'))}}</td>
@@ -93,6 +94,7 @@
                     <td>{{ $data->created_at }}</td>
                     <td>{{ $data->updated_at }}</td>
                     <td>{{$data->isActive}}</td>
+                    <td>{{$data->is_hot}}</td>
                     <td>
                         @permission(('product-edit'))
                         <a class="btn btn-primary" href="{{ route('product.edit',$data->id) }}">Cập Nhật</a>
@@ -107,6 +109,6 @@
                 @endforeach
             </table>
         </div>
-        {!! $products->links() !!}
+        {{--{!! $products->links() !!}--}}
     </div>
 @stop

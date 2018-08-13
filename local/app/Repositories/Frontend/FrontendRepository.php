@@ -12,7 +12,7 @@ class FrontendRepository implements FrontendRepositoryInterface
     public function getFrontend()
     {
         $data = [];
-        $albums = Product::where('isActive', ACTIVE)->orderBy('id', 'DESC')->take(6)->get();
+        $albums = Product::where('isActive', ACTIVE)->where('is_hot',ACTIVE)->orderBy('order', 'DESC')->take(6)->get();
         $news = Post::where('category_item_id', 2)->orderBy('id', 'DESC')->take(4)->get();
         $promotion=Post::where('category_item_id', 3)->first();
         foreach ($news as $key => $data) {
