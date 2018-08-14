@@ -1,0 +1,52 @@
+#h_10 {
+  h3.title {
+    font-size: 17px;
+    line-height: 54.4px;
+    color: $main-color;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 0;
+    margin: 0 0 49px 0;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    &:after {
+      width: 70px;
+      height: 2px;
+      background: $main-color;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -35px;
+      content: '';
+    }
+  }
+  .one-item {
+    .image-item {
+      a {
+        display: block;
+        transition: all 1s;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 4px solid $main-color;
+      }
+    }
+    .content {
+      h4 {
+        text-align: center;
+        line-height: 1.5;
+        padding: 10px 0;
+        a {
+          color: $main-color;
+        }
+      }
+      .description{
+        line-height: 1.5;
+      }
+    }
+  }
+}

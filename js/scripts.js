@@ -3,6 +3,7 @@ var plugins = {
     sliderCarousel:$('.slider-carousel'),
     menuTop:$('#menu'),
     gridAlbum: $('.grid-album'),
+    h10PacketPriceCarousel:$('#h_10 .packet-price-carousel')
 };
 $(document).ready(function () {
     function sidebar() {
@@ -66,10 +67,47 @@ $(document).ready(function () {
 
 
     }
+    function runH10PacketPriceCarousel(){
+        plugins.h10PacketPriceCarousel.owlCarousel({
+            animateOut: 'fadeOutRight',
+            animateIn: 'fadeInLeft',
+            items: 4,
+            loop:true,
+            smartSpeed: 450,
+            margin: 20,
+            nav:true,
+            dots:false,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0: {
+                    items: 2
+                },
+                500: {
+                    items: 2
+                },
+                736: {
+                    items: 3
+                },
+                768: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    }
+    $(".owl-nav .owl-prev").html("<img src='images/temps/home/h10/red_back_btn.png' alt='Prev'/>");
+    $(".owl-nav .owl-next").html("<img src='images/temps/home/h10/red_next_btn.png' alt='Prev'/>");
     if(plugins.gridAlbum.length){
         runGridAlbum();
     }
     if(plugins.sliderCarousel.length){
         runSliderCarousel();
+    }
+    if(plugins.h10PacketPriceCarousel.length){
+        runH10PacketPriceCarousel();
     }
 });

@@ -1,7 +1,29 @@
 #h_3 {
   background-color: #f6f6f6;
-  padding: 105px 0;
+  padding-bottom: 105px;
   h3.title {
+    font-size: 17px;
+    line-height: 54.4px;
+    color: $main-color;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 0;
+    margin: 0 0 49px 0;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    &:after {
+      width: 70px;
+      height: 2px;
+      background: $main-color;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -35px;
+      content: '';
+    }
+  }
+  h4.title-service {
     display: block;
     font-size: 17px;
     letter-spacing: 3px;
@@ -12,16 +34,16 @@
     text-align: center;
     color: $main-color;
     font-weight: bold;
-    &:after{
-      background: none repeat scroll 0 0 $main-color;
-      bottom: 0;
-      content: "";
-      height: 2px;
-      left: 50%;
-      margin-left: -35px;
-      position: absolute;
-      width: 70px;
-    }
+    //&:after{
+    //  background: none repeat scroll 0 0 $main-color;
+    //  bottom: 0;
+    //  content: "";
+    //  height: 2px;
+    //  left: 50%;
+    //  margin-left: -35px;
+    //  position: absolute;
+    //  width: 70px;
+    //}
   }
   .image-cover{
     width: 100%;

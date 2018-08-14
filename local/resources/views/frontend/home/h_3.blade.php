@@ -1,9 +1,12 @@
 <div id="h_3">
+    <h3 class="title">
+        DỊCH VỤ
+    </h3>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="card one-item h-100">
-                    <h3 class="title">CHỤP HÌNH CƯỚI</h3>
+                    <h4 class="title-service">CHỤP HÌNH CƯỚI</h4>
                     <div class="image-cover">
                         <a href="#">
                             {{ Html::image('images/temps/home/introduct1.jpg','',array('class'=>'')) }}
@@ -18,7 +21,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card one-item h-100">
-                    <h3 class="title">TRỌN GÓI NGÀY CƯỚI</h3>
+                    <h4 class="title-service">TRỌN GÓI NGÀY CƯỚI</h4>
                     <div class="image-cover">
                         <a href="#">
                             {{ Html::image('images/temps/home/introduct2.jpg','',array('class'=>'')) }}
@@ -33,7 +36,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card one-item h-100">
-                    <h3 class="title">QUAY PHIM PHÓNG SỰ</h3>
+                    <h4 class="title-service">QUAY PHIM PHÓNG SỰ</h4>
                     <div class="image-cover">
                         <a href="#">
                             {{ Html::image('images/temps/home/introduct3.jpg','',array('class'=>'')) }}
