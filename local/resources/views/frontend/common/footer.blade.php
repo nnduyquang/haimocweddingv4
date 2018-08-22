@@ -7,7 +7,7 @@
                 </h3>
                 <div class="content">
                     <address> 38 Tôn Thất Đạm, Thanh Khê, Đà Nẵng</address>
-                    <span> 0902.710.212 - 0919.567.177 </span>
+                    <span> 0902.710.212 - 0914.348.131 </span>
                     <span>seaweddingvn@gmail.com</span>
                 </div>
             </div>

@@ -15,8 +15,8 @@
     h1 {
       text-align: center;
       line-height: 30px;
-      color: #968266;
-      text-transform: Capitalize;
+      color: $main-color;
+      text-transform: uppercase;
       font-size: 36px;
       padding: 15px 0px 15px 0px;
     }
@@ -29,6 +29,7 @@
       color: white;
       border-right: 1px solid white;
       line-height: 2.5;
+      text-transform: uppercase;
     }
     ul.list-location {
       columns: 3;

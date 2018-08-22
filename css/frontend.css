@@ -301,10 +301,10 @@ img {
 
 #menu ul.menu-info li a {
   color: white;
-  padding: 23px 15px 24px;
+  padding: 23px 10px 24px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: bold;
 }
 
@@ -814,13 +814,13 @@ This class is added to the container
 }
 
 #h_3 h3.title {
-  font-size: 17px;
+  font-size: 26px;
   line-height: 54.4px;
   color: #08327E;
   font-weight: bold;
   position: relative;
-  padding: 8px 0;
-  margin: 0 0 49px 0;
+  padding: 18px 0 0;
+  margin: 0 0 19px 0;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -942,6 +942,7 @@ This class is added to the container
 #h_4 h3.title span {
   color: #08327E;
   font-weight: bold;
+  font-size: 26px;
 }
 
 #h_4 h3.title:after {
@@ -1198,7 +1199,7 @@ This class is added to the container
 }
 
 #h_7 h3.title {
-  font-size: 17px;
+  font-size: 26px;
   line-height: 54.4px;
   color: #08327E;
   font-weight: bold;
@@ -1394,7 +1395,7 @@ This class is added to the container
 }
 
 #h_10 h3.title {
-  font-size: 17px;
+  font-size: 26px;
   line-height: 54.4px;
   color: #08327E;
   font-weight: bold;
@@ -1433,7 +1434,20 @@ This class is added to the container
 #h_10 .one-item .content h4 {
   text-align: center;
   line-height: 1.5;
-  padding: 10px 0;
+  padding: 15px 0;
+  position: relative;
+}
+
+#h_10 .one-item .content h4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #08327E;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: 0;
 }
 
 #h_10 .one-item .content h4 a {
@@ -1442,6 +1456,7 @@ This class is added to the container
 
 #h_10 .one-item .content .description {
   line-height: 1.5;
+  margin-top: 11px;
 }
 
 #al_1 .main-img img {
@@ -1462,7 +1477,7 @@ This class is added to the container
 #al_1 .main-title h1 {
   text-align: center;
   line-height: 30px;
-  color: #968266;
+  color: #08327E;
   text-transform: Capitalize;
   font-size: 36px;
   padding: 15px 0px 15px 0px;
@@ -1557,8 +1572,8 @@ This class is added to the container
 #co_1 .main-title h1 {
   text-align: center;
   line-height: 30px;
-  color: #968266;
-  text-transform: Capitalize;
+  color: #08327E;
+  text-transform: uppercase;
   font-size: 36px;
   padding: 15px 0px 15px 0px;
 }
@@ -1573,6 +1588,7 @@ This class is added to the container
   color: white;
   border-right: 1px solid white;
   line-height: 2.5;
+  text-transform: uppercase;
 }
 
 #co_1 .location ul.list-location {
@@ -1679,8 +1695,8 @@ This class is added to the container
 #pr_1 .main-title h1 {
   text-align: center;
   line-height: 30px;
-  color: #968266;
-  text-transform: Capitalize;
+  color: #08327E;
+  text-transform: uppercase;
   font-size: 36px;
   padding: 15px 0px 15px 0px;
 }

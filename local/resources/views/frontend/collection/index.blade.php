@@ -1,12 +1,12 @@
 @extends('frontend.master')
 @section('title')
-    Nội Thất
+    Sea Wedding
 @stop
 @section('description')
-    Nội Thất
+    Chụp Ảnh Cưới Chuyên Nghiệp Tại Đà Nẵng
 @stop
 @section('keyword')
-    Nội Thất
+    chụp ảnh cưới đà nẵng
 @stop
 @section('slider')
 

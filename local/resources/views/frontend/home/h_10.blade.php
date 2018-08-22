@@ -9,9 +9,9 @@
                     <a style="background:url('{{URL::to('images/temps/home/h10/1.jpg')}}')" href="#"></a>
                 </div>
                 <div class="content">
-                    <h4><a href="#">Gói chụp ảnh cưới - Đà Nẵng Packet</a></h4>
+                    <h4><a href="#">Gói chụp Đà Nẵng - Hội An</a></h4>
                     <div class="description">
-                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời. Album cưới chụp ở  …
+                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời.
                     </div>
                 </div>
             </div>
@@ -20,9 +20,9 @@
                     <a style="background:url('{{URL::to('images/temps/home/h10/2.jpg')}}')" href="#"></a>
                 </div>
                 <div class="content">
-                    <h4><a href="#">Gói chụp ảnh cưới - Đà Nẵng Packet</a></h4>
+                    <h4><a href="#">Gói chụp Đà Nẵng - Bà Nà</a></h4>
                     <div class="description">
-                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời. Album cưới chụp ở  …
+                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời.
                     </div>
                 </div>
             </div>
@@ -31,9 +31,9 @@
                     <a style="background:url('{{URL::to('images/temps/home/h10/3.jpg')}}')" href="#"></a>
                 </div>
                 <div class="content">
-                    <h4><a href="#">Gói chụp ảnh cưới - Đà Nẵng Packet</a></h4>
+                    <h4><a href="#">Gói chụp Đà Nẵng - Đồi Chè</a></h4>
                     <div class="description">
-                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời. Album cưới chụp ở  …
+                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời.
                     </div>
                 </div>
             </div>
@@ -42,9 +42,9 @@
                     <a style="background:url('{{URL::to('images/temps/home/h10/4.jpg')}}')" href="#"></a>
                 </div>
                 <div class="content">
-                    <h4><a href="#">Gói chụp ảnh cưới - Đà Nẵng Packet</a></h4>
+                    <h4><a href="#">Gói Ưu Đãi Hấp Dẫn</a></h4>
                     <div class="description">
-                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời. Album cưới chụp ở  …
+                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời.
                     </div>
                 </div>
             </div>
@@ -53,9 +53,9 @@
                     <a style="background:url('{{URL::to('images/temps/home/h10/6.jpg')}}')" href="#"></a>
                 </div>
                 <div class="content">
-                    <h4><a href="#">Gói chụp ảnh cưới - Đà Nẵng Packet</a></h4>
+                    <h4><a href="#">Gói nội thành Đà Nẵng</a></h4>
                     <div class="description">
-                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời. Album cưới chụp ở  …
+                        Đà Nẵng vừa có núi non, vừa có biển xanh trải dài thơ mộng là địa điểm đáng đến một lần trong đời.
                     </div>
                 </div>
             </div>

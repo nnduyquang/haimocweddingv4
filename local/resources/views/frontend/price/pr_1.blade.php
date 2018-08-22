@@ -134,7 +134,7 @@
                                     Gói Đà Nẵng (VIP)
                                 </h4>
                                 <p class="price">
-                                    <span>8.000.000</span>
+                                    <span>7.900.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 6h đến 17h
@@ -422,7 +422,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/price/6.jpg','',array('class'=>'')) }}
+                            {{ Html::image('images/price/16.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -533,7 +533,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/price/8.jpg','',array('class'=>'')) }}
+                            {{ Html::image('images/price/16.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -570,12 +570,12 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/price/8.jpg','',array('class'=>'')) }}
+                            {{ Html::image('images/price/18.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
                                 <h4 class="title">
-                                    Gói 4 địa điểm (Đà Nẵng, Hội An, Đồi Chè, Bà Nà, Lăng Cô...)
+                                    Gói 4 địa điểm (Đà Nẵng, Hội An, Đồi Chè, Bà Nà, Lăng Cô...) (VIP)
                                 </h4>
                                 <p class="price">
                                     <span>16.900.000</span>
@@ -607,7 +607,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/price/9.jpg','',array('class'=>'')) }}
+                            {{ Html::image('images/price/19.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">
@@ -615,7 +615,7 @@
                                     Đảo Lý Sơn
                                 </h4>
                                 <p class="price">
-                                    <span>21.500.000</span>
+                                    <span>17.900.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 2 Ngày
@@ -653,7 +653,7 @@
                                     Quy Nhơn
                                 </h4>
                                 <p class="price">
-                                    <span>21.500.000</span>
+                                    <span>19.000.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 2 Ngày
@@ -683,7 +683,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-item">
-                            {{ Html::image('images/price/9.jpg','',array('class'=>'')) }}
+                            {{ Html::image('images/price/20.jpg','',array('class'=>'')) }}
                         </div>
                         <div class="card-body">
                             <div class="plan">

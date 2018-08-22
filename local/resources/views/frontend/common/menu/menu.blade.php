@@ -7,7 +7,7 @@
                     <li><a href="{{URL::to('/album')}}">Album</a></li>
                     <li><a href="{{URL::to('/khuyen-mai')}}">Khuyến Mãi</a></li>
                     <li><a href="{{URL::to('/bang-gia')}}">Bảng Giá</a></li>
-                    <li><a href="#">Bộ Sưu Tập</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
                     <li><a href="{{URL::to('/lien-he')}}">Liên Hệ</a></li>
                 </ul>
             </div>

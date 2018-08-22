@@ -33,7 +33,7 @@
                 <div class="info-group">
                     <i class="far fa-heart"></i>
                     <div class="info">
-                        countdown to<br> <span> michael & johnny</span> <br>wedding ceremony
+                        countdown to<br> <span> sea wedding</span> <br>wedding ceremony
                     </div>
                 </div>
             </div>

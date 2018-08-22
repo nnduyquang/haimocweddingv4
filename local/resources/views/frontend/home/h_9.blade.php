@@ -33,10 +33,10 @@
         </div>
         <div class="content">
             <div class="title">
-                {{$data['promotion']->title}}
+                {{--{{$data['promotion']->title}}--}}
             </div>
             <div class="description">
-                {!!$data['promotion']->description !!}
+                {{--{!!$data['promotion']->description !!}--}}
             </div>
 
         </div>
