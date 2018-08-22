@@ -24,7 +24,7 @@
         </div>
         <div class="info text-center">
             <p>Photographer: Hải Nguyễn</p>
-            <p>Makeup: Ly Ly Lê</p>
+            {{--<p>Makeup: Ly Ly Lê</p>--}}
             <p>Địa điểm chụp: Cầu Tình Yêu, Bà Nà, Bãi Đa</p>
         </div>
         <div class="album">
