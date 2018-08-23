@@ -2009,6 +2009,97 @@ This class is added to the container
   padding: 15px 0px 15px 0px;
 }
 
+#dp_1 .info .one-item {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+
+#dp_1 .info .one-item:hover {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+}
+
+#dp_1 .info .one-item .img-item {
+  height: auto;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#dp_1 .info .one-item .plan {
+  padding: 20px;
+}
+
+#dp_1 .info .one-item .plan h4.title {
+  font-size: 20px;
+  height: 35px;
+  text-transform: uppercase;
+  color: #08327E;
+  font-weight: bold;
+}
+
+#dp_1 .info .one-item .plan p.price {
+  line-height: 2.5;
+}
+
+#dp_1 .info .one-item .plan p.price span {
+  font-size: 36px;
+}
+
+#dp_1 .info .one-item .plan p.detail {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+#dp_1 .info .one-item .plan .content h5 {
+  margin-bottom: 21px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#dp_1 .info .one-item .plan .content ul {
+  list-style: none;
+}
+
+#dp_1 .info .one-item .plan .content ul li {
+  line-height: 1.5;
+  position: relative;
+}
+
+#dp_1 .info .one-item .plan .content ul li:before {
+  content: '';
+  width: 2px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  left: -11px;
+  background-color: #333333;
+}
+
+#dp_1 .info .one-item .booking {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+#dp_1 .info .one-item .booking a {
+  display: inline-block;
+  color: white;
+  background-color: #08327E;
+  padding: 10px 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#dp_1 .info .one-item .booking a:hover {
+  background-color: #ff6d00;
+}
+
 #dp_1 .other {
   padding: 60px 0;
 }

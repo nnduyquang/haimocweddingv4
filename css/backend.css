@@ -100,6 +100,10 @@ k
   margin-right: 3px;
 }
 
+.active-menu {
+  background-color: #007bff;
+}
+
 #ulti-bar {
   margin-top: 20px;
 }

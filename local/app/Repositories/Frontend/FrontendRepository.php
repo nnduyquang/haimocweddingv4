@@ -36,8 +36,14 @@ class FrontendRepository implements FrontendRepositoryInterface
         $data = [];
         $album = Product::where('path', $path)->first();
         $order=Product::where('id','<>',$album->id)->where('isActive', ACTIVE)->orderBy('id','DESC')->take(8)->get();
+        $listPrice=Post::where('category_item_id', 4)->get();
+        foreach ($listPrice as $key=>$item)
+        {
+            $item->description = cat_chuoi_dai_thanh_ngan(loai_bo_html_tag($item->description), 200);
+        }
         $data['order'] = $order;
         $data['album'] = $album;
+        $data['listPrice']=$listPrice;
         return $data;
     }
 

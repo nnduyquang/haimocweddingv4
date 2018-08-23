@@ -43,7 +43,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -266,7 +266,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -303,7 +303,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -340,7 +340,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -377,7 +377,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -414,7 +414,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -451,7 +451,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -488,7 +488,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -525,7 +525,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -562,7 +562,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -599,7 +599,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -637,7 +637,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -675,7 +675,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -713,7 +713,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -751,7 +751,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="#">Book Ngay</a>
+                                <a href="/lien-he">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
