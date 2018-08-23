@@ -64,11 +64,11 @@
                     <div class="contact_top">
                         <h3 class="title">Địa chỉ liên hệ</h3>
                         <hr>
-                        <h4 class="title">HẢI MỘC WEDDING </h4>
+                        <h4 class="title">SEA WEDDING</h4>
                         <ul>
-                            <li><i class="far fa-building"></i>Địa Chỉ:</li>
-                            <li><i class="fas fa-phone"></i>Điện Thoại: </li>
-                            <li><i class="far fa-envelope"></i></li>
+                            <li><i class="far fa-building"></i><span>Địa Chỉ:</span> 38 Tôn Thất Đạm, Thanh Khê, Đà Nẵng</li>
+                            <li><i class="fas fa-phone"></i><span>Điện Thoại:</span> 0902.710.212 - 0914.348.131</li>
+                            <li><i class="far fa-envelope"></i><span>Email: </span>seaweddingvn@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -76,8 +76,7 @@
         </div>
         <div class="col-md-12">
 
-            <iframe width="100%" height="450" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=157%20Nguy%E1%BB%85n%20Th%C6%B0%E1%BB%A3ng%20Hi%E1%BB%81n%2C%20P.6%20Qu%E1%BA%ADn%20B%C3%ACnh%20Th%E1%BA%A1nh%2C%20TPHCM&key=AIzaSyCz9f8H5wjJIac5LrePbowoDN8Vp2FEEZ8" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.877315033238!2d108.1989974153194!3d16.07185498887933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421851f13ae46b%3A0x8021d2bd71347e39!2zMzggVMO0biBUaOG6pXQgxJDhuqFtLCBYdcOibiBIw6AsIFRoYW5oIEtow6osIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1534990424703" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </div>

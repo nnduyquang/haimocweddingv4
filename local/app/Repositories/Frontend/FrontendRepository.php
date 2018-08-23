@@ -15,13 +15,19 @@ class FrontendRepository implements FrontendRepositoryInterface
         $albums = Product::where('isActive', ACTIVE)->where('is_hot',ACTIVE)->orderBy('order', 'DESC')->take(6)->get();
         $news = Post::where('category_item_id', 2)->orderBy('id', 'DESC')->take(4)->get();
         $promotion=Post::where('category_item_id', 3)->first();
-        foreach ($news as $key => $data) {
-            $data->description = cat_chuoi_dai_thanh_ngan(loai_bo_html_tag($data->description), 200);
-            $data->title = cat_chuoi_dai_thanh_ngan($data->title, 50);
+        $listPrice=Post::where('category_item_id', 4)->get();
+        foreach ($listPrice as $key=>$item)
+        {
+            $item->description = cat_chuoi_dai_thanh_ngan(loai_bo_html_tag($item->description), 200);
+        }
+        foreach ($news as $key => $item) {
+            $item->description = cat_chuoi_dai_thanh_ngan(loai_bo_html_tag($item->description), 200);
+            $item->title = cat_chuoi_dai_thanh_ngan($item->title, 50);
         }
         $data['albums'] = $albums;
         $data['news'] = $news;
         $data['promotion']=$promotion;
+        $data['listPrice']=$listPrice;
         return $data;
     }
 
@@ -64,6 +70,14 @@ class FrontendRepository implements FrontendRepositoryInterface
         $albums = Product::where('isActive', ACTIVE)->get();
         $data['locations'] = $locations;
         $data['albums'] = $albums;
+        return $data;
+    }
+
+    public function getPriceDetail($path)
+    {
+        $data = [];
+        $post=Post::where('path',$path)->first();
+        $data['post'] = $post;
         return $data;
     }
 

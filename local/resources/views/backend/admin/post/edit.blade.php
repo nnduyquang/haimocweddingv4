@@ -72,6 +72,37 @@
                         {{ Html::image('','',array('id'=>'showHinhPost','class'=>'show-image'))}}
                     @endif
                 </div>
+                <div class="form-group">
+                    <strong>Đính kèm album?</strong>
+                    <div class="list-album">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th></th>
+                                <th>Tên Album</th>
+                                <th>Hình đại diện</th>
+                                <th>Địa điểm chụp</th>
+                            </tr>
+                            @php
+                                $arrayID=$post->products()->get();
+                            @endphp
+                            @foreach ($products as $key => $data)
+                                <tr>
+                                    @if(in_array($data->id,explode(',',$arrayID->implode('id',','))))
+                                        <td>{{Form::checkbox('id[]',$data->id,true)}}</td>
+                                    @else
+                                        <td>{{Form::checkbox('id[]',$data->id,false)}}</td>
+                                    @endif
+                                    <td>{{$data->name}}</td>
+                                    <td>{{Html::image($data->image,'',array('class'=>'product-img'))}}</td>
+                                    @php
+                                        $arrayLocationItem=$data->locations()->get();
+                                    @endphp
+                                    <td>{{$arrayLocationItem->implode('name',',')}}</td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-12">

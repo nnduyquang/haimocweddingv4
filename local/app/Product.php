@@ -25,4 +25,8 @@ class Product extends Model
     {
         return $this->belongsToMany('App\Location', 'location_album', 'product_id', 'location_id')->withTimestamps();
     }
+    public function posts()
+    {
+        return $this->belongsToMany('App\Post', 'post_product', 'product_id', 'post_id')->withTimestamps();
+    }
 }

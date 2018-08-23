@@ -5,6 +5,7 @@ Route::get('/', 'FrontendController@getFrontend');
 Route::get('/bang-gia', function () {
     return view('frontend.price.index');
 });
+Route::get('/bang-gia/{path}', 'FrontendController@getPriceDetail');
 Route::get('/lien-he', function () {
     return view('frontend.contact.index');
 });

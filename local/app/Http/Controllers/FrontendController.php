@@ -36,6 +36,10 @@ class FrontendController extends Controller
         $data = $this->frontendRepository->getAllAlbum();
         return view('frontend.collection.index', compact('data'));
     }
+    public function getPriceDetail($path){
+        $data = $this->frontendRepository->getPriceDetail($path);
+        return view('frontend.d_price.index', compact('data'));
+    }
 
 
 }

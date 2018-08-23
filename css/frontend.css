@@ -1824,6 +1824,7 @@ This class is added to the container
 #cont_1 .contact_top h3.title {
   font-weight: bold;
   font-size: 24px;
+  text-align: center;
 }
 
 #cont_1 .contact_top p {
@@ -1843,6 +1844,10 @@ This class is added to the container
 
 #cont_1 .contact_top ul li i {
   margin-right: 10px;
+}
+
+#cont_1 .contact_top ul li span {
+  font-weight: bold;
 }
 
 #cont_1 .contact_bottom .input-group {
@@ -1976,6 +1981,64 @@ This class is added to the container
 }
 
 #po_1 .album .one-item span.title {
+  display: block;
+  padding: 20px;
+}
+
+#dp_1 .main-img img {
+  width: 100%;
+  height: auto;
+}
+
+#dp_1 .main-title {
+  background-color: #f4f4f4;
+}
+
+#dp_1 .main-title .icon-title {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 21px;
+}
+
+#dp_1 .main-title h1 {
+  text-align: center;
+  line-height: 30px;
+  color: #08327E;
+  text-transform: Capitalize;
+  font-size: 36px;
+  padding: 15px 0px 15px 0px;
+}
+
+#dp_1 .other {
+  padding: 60px 0;
+}
+
+#dp_1 .other h4 {
+  color: #08327E;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9dcdd;
+  padding-bottom: 10px;
+}
+
+#dp_1 .other .one-item {
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#dp_1 .other .one-item:hover {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+          box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
+}
+
+#dp_1 .other .one-item .img-cover a img {
+  border-radius: 20px 20px 0 0;
+}
+
+#dp_1 .other .one-item span.title {
   display: block;
   padding: 20px;
 }

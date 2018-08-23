@@ -13,4 +13,6 @@ interface FrontendRepositoryInterface
     public function getFrontEndInfo();
 
     public function getAllAlbum();
+
+    public function getPriceDetail($path);
 }

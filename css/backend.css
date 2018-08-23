@@ -348,3 +348,8 @@ k
     opacity: 0;
   }
 }
+
+.list-album {
+  height: 500px;
+  overflow: scroll;
+}

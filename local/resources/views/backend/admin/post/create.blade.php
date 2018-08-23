@@ -54,6 +54,30 @@
                 <div class="form-group">
                     {{ Html::image('','',array('id'=>'showHinhPost','class'=>'show-image'))}}
                 </div>
+                <div class="form-group">
+                    <strong>Đính kèm album?</strong>
+                    <div class="list-album">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th></th>
+                                <th>Tên Album</th>
+                                <th>Hình đại diện</th>
+                                <th>Địa điểm chụp</th>
+                            </tr>
+                            @foreach ($products as $key => $data)
+                            <tr>
+                                <td>{{Form::checkbox('id[]',$data->id)}}</td>
+                                <td>{{$data->name}}</td>
+                                <td>{{Html::image($data->image,'',array('class'=>'product-img'))}}</td>
+                                @php
+                                    $arrayLocationItem=$data->locations()->get();
+                                @endphp
+                                <td>{{$arrayLocationItem->implode('name',',')}}</td>
+                            </tr>
+                            @endforeach
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-12 p-0">

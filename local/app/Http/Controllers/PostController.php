@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\CategoryItem;
 use App\Post;
+use App\Product;
 use App\Seo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -41,7 +42,8 @@ class PostController extends Controller
         $newArray = [];
         self::showCategoryItemDropDown($dd_categorie_posts, 0, $newArray);
         $dd_categorie_posts = array_pluck($newArray, 'name', 'id');
-        return view('backend.admin.post.create', compact('roles', 'dd_categorie_posts'));
+        $products=Product::where('isActive',ACTIVE)->orderBy('id','DESC')->get();
+        return view('backend.admin.post.create', compact('roles', 'dd_categorie_posts','products'));
     }
 
     /**
@@ -63,6 +65,7 @@ class PostController extends Controller
         $seoKeywords=$request->input('seo_keywords');
         $isActive = $request->input('post_is_active');
         $image = $request->input('image');
+        $listIdAlbum=$request->input('id');
         if ($image) {
             $image = substr($image, strpos($image, 'images'), strlen($image) - 1);
             $post->image = $image;
@@ -88,6 +91,7 @@ class PostController extends Controller
         $post->user_id = Auth::user()->id;
         $post->seo_id=$seo->id;
         $post->save();
+        $post->products()->attach($listIdAlbum);
         return redirect()->route('post.index')->with('success', 'Tạo Mới Thành Công Bài Viết');
     }
 
@@ -127,7 +131,8 @@ class PostController extends Controller
         $dd_categorie_posts = array_map(function ($index, $value) {
             return ['index' => $index, 'value' => $value];
         }, array_keys($dd_categorie_posts), $dd_categorie_posts);
-        return view('backend.admin.post.edit', compact('post', 'dd_categorie_posts'));
+        $products=Product::where('isActive',ACTIVE)->orderBy('id','DESC')->get();
+        return view('backend.admin.post.edit', compact('post', 'dd_categorie_posts','products'));
     }
 
     /**
@@ -148,6 +153,7 @@ class PostController extends Controller
         $seoKeywords=$request->input('seo_keywords');
         $isActive = $request->input('post_is_active');
         $image = $request->input('image');
+        $listIdAlbum=$request->input('id');
         if ($image) {
             $image = substr($image, strpos($image, 'images'), strlen($image) - 1);
             $post->image = $image;
@@ -175,6 +181,7 @@ class PostController extends Controller
         $post->post_type = IS_POST;
         $post->user_id = Auth::user()->id;
         $post->save();
+        $post->products()->sync($listIdAlbum);
         return redirect()->route('post.index')->with('success', 'Cập Nhật Thành Công Bài Viết');
     }
 
@@ -188,6 +195,7 @@ class PostController extends Controller
     {
         $post = Post::find($id);
         $post->seos->delete();
+        $post->products->delete();
         $post->delete();
         return redirect()->route('post.index')
             ->with('success', 'Đã Xóa Thành Công');
