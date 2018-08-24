@@ -1,6 +1,6 @@
 <div id="h_10">
     <h3 class="title">
-        GÓI CHỤP HOT TẠI SEA WEDDING
+        GÓI CHỤP HOT TẠI SEA
     </h3>
     <div class="container">
         <div class="packet-price-carousel owl-carousel owl-theme">

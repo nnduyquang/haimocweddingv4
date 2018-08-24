@@ -674,7 +674,7 @@ This class is added to the container
 #h_1 .one-item {
   width: 120px;
   height: 120px;
-  border: 1px solid #eaa8ba;
+  border: 1px solid #00afef;
   border-radius: 50%;
   text-align: center;
   padding: 28px 0 0 0;
@@ -810,14 +810,13 @@ This class is added to the container
 
 #h_3 {
   background-color: #f6f6f6;
-  padding-bottom: 105px;
+  padding-bottom: 33px;
 }
 
 #h_3 h3.title {
-  font-size: 26px;
+  font-size: 30px;
   line-height: 54.4px;
   color: #08327E;
-  font-weight: bold;
   position: relative;
   padding: 18px 0 0;
   margin: 0 0 19px 0;
@@ -842,7 +841,6 @@ This class is added to the container
   font-size: 17px;
   letter-spacing: 3px;
   line-height: 54.4px;
-  margin: 0 0 28px;
   padding: 0 0 6px;
   position: relative;
   text-align: center;
@@ -941,8 +939,7 @@ This class is added to the container
 
 #h_4 h3.title span {
   color: #08327E;
-  font-weight: bold;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 #h_4 h3.title:after {
@@ -1195,14 +1192,13 @@ This class is added to the container
 }
 
 #h_7 {
-  padding: 49px 0;
+  padding: 18px 0;
 }
 
 #h_7 h3.title {
-  font-size: 26px;
+  font-size: 30px;
   line-height: 54.4px;
   color: #08327E;
-  font-weight: bold;
   position: relative;
   padding: 8px 0;
   margin: 0 0 49px 0;
@@ -1395,13 +1391,12 @@ This class is added to the container
 }
 
 #h_10 h3.title {
-  font-size: 26px;
+  font-size: 30px;
   line-height: 54.4px;
   color: #08327E;
-  font-weight: bold;
   position: relative;
   padding: 8px 0;
-  margin: 0 0 49px 0;
+  margin: 23px 0 49px 0;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
