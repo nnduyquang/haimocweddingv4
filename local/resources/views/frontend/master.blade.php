@@ -29,6 +29,7 @@
 @include('frontend.common.footer')
 
 {{ Html::script('js/core.common.js') }}
+{{ Html::script('js/ulti.js') }}
 {{ Html::script('js/core.frontend.js') }}
 <script type="text/javascript">
     $.ajaxSetup({

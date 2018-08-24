@@ -22,21 +22,21 @@
                     </div>
                     <div class="contact_bottom">
                         <div class="ip-name input-group">
-                            <input class="form-control input-text" placeholder="Tên Của Bạn" name="name-ct" type="text"
+                            <input class="form-control input-text" placeholder="Tên Của Bạn" name="name" type="text"
                                    value="">
                             <div class="invalid-feedback">
                                 Please choose a username.
                             </div>
                         </div>
                         <div class="ip-email input-group">
-                            <input class="form-control input-text" placeholder="Email" name="email-ct" type="text"
+                            <input class="form-control input-text" placeholder="Email" name="email" type="text"
                                    value="">
                             <div class="invalid-feedback">
                                 Please choose a Email.
                             </div>
                         </div>
                         <div class="ip-phone input-group">
-                            <input class="form-control input-text" placeholder="Số Điện Thoại" name="phone-ct"
+                            <input class="form-control input-text" placeholder="Số Điện Thoại" name="phone"
                                    type="text" value="">
                             <div class="invalid-feedback">
                                 Please choose a Email.
