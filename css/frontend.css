@@ -1787,6 +1787,19 @@ This class is added to the container
   background-color: #ff6d00;
 }
 
+#pl_modal_register .modal-dialog .modal-content .modal-body select[name='register_type'] {
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  border: 1px solid #ced4da;
+}
+
+#pl_modal_register .modal-dialog .modal-content .modal-body input {
+  border-radius: 0;
+  margin-bottom: 5px;
+}
+
 #cont_1 .main-img img {
   width: 100%;
   height: auto;

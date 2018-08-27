@@ -43,7 +43,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="1" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="2" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="3" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="4" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="5" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="6" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -266,7 +266,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="7" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -303,7 +303,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="8" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -340,7 +340,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="9" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -377,7 +377,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="10" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -414,7 +414,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="11" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -451,7 +451,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="12" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -488,7 +488,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="13" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -525,7 +525,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="14" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -562,7 +562,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="15" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -599,7 +599,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="16" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -637,7 +637,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="7" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -675,7 +675,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="18" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -713,7 +713,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="19" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -751,7 +751,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="booking">
-                                <a href="/lien-he">Tôi Book Gói Này</a>
+                                <a data-toggle="modal" data-id="20" class="do-register" href="#pl_modal_register">Tôi Book Gói Này</a>
                             </div>
                         </div>
                     </div>
@@ -760,3 +760,4 @@
         </div>
     </div>
 </div>
+@include('frontend.price.pr_modal')

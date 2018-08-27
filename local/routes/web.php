@@ -15,6 +15,7 @@ Route::get('/album/', 'FrontendController@getAllAlbum');
 Route::get('/tin-tuc/{path}', 'FrontendController@getPostDetail')->defaults('type','tin-tuc');
 Route::get('/khuyen-mai', 'FrontendController@getPostDetail')->defaults('path','')->defaults('type','khuyen-mai');
 Route::post('/sendmail/send', ['as' => 'mail.send', 'uses' => 'MailController@send']);
+Route::post('/send-request-price/send', ['as' => 'mail-price.send', 'uses' => 'MailController@sendPrice']);
 
 
 Route::post('/tim-kiem','FrontendController@getSearch')->name('search');

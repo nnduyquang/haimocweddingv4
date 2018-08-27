@@ -1,0 +1,19 @@
+#pl_modal_register{
+  .modal-dialog{
+    .modal-content{
+      .modal-body{
+        select[name='register_type']{
+          width: 100%;
+          padding: .375rem .75rem;
+          font-size: 1rem;;
+          margin-bottom: 5px;
+          border: 1px solid #ced4da;
+        }
+        input{
+          border-radius: 0;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
