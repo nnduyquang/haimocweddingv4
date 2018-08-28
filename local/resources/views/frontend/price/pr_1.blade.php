@@ -59,7 +59,7 @@
                                     Gói phim trường (VIP)
                                 </h4>
                                 <p class="price">
-                                    <span>6.000.000</span>
+                                    <span>5.900.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 2 tiếng
@@ -97,7 +97,7 @@
                                     Gói Đà Nẵng (basic)
                                 </h4>
                                 <p class="price">
-                                    <span>6.500.000</span>
+                                    <span>5.900.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: Nửa Ngày
@@ -112,6 +112,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -134,7 +135,7 @@
                                     Gói Đà Nẵng (VIP)
                                 </h4>
                                 <p class="price">
-                                    <span>7.900.000</span>
+                                    <span>7.000.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 6h đến 17h
@@ -149,6 +150,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -186,6 +188,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -208,7 +211,7 @@
                                     Gói Đà Nẵng - Hội An (VIP)
                                 </h4>
                                 <p class="price">
-                                    <span>9.500.000</span>
+                                    <span>9.000.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 6h đến 17h
@@ -223,6 +226,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -260,6 +264,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -282,7 +287,7 @@
                                     Gói Đà Nẵng - Bà Nà (VIP)
                                 </h4>
                                 <p class="price">
-                                    <span>9.500.000</span>
+                                    <span>9.000.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 6h đến 17h
@@ -297,6 +302,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -334,6 +340,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -371,6 +378,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -408,6 +416,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -445,6 +454,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -482,6 +492,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -519,6 +530,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -556,6 +568,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -593,6 +606,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -615,7 +629,7 @@
                                     Đảo Lý Sơn
                                 </h4>
                                 <p class="price">
-                                    <span>17.900.000</span>
+                                    <span>12.900.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 2 Ngày
@@ -630,6 +644,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                     (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Lý Sơn, ăn ở khách sạn 1 đêm)
                                 </div>
@@ -653,7 +668,7 @@
                                     Quy Nhơn
                                 </h4>
                                 <p class="price">
-                                    <span>19.000.000</span>
+                                    <span>13.500.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 2 Ngày
@@ -668,6 +683,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                     (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Quy Nhơn, ăn ở khách sạn 1 đêm)
                                 </div>
@@ -691,7 +707,7 @@
                                     Đà Lạt
                                 </h4>
                                 <p class="price">
-                                    <span>21.500.000</span>
+                                    <span>16.900.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 2 Ngày
@@ -706,6 +722,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                     (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Quy Nhơn, ăn ở khách sạn 1 đêm)
                                 </div>
@@ -729,7 +746,7 @@
                                     Nha Trang
                                 </h4>
                                 <p class="price">
-                                    <span>21.500.000</span>
+                                    <span>16.900.000</span>
                                 </p>
                                 <p class="detail">
                                     Thời gian chụp: 2 Ngày
@@ -744,6 +761,7 @@
                                         <li>makeup + làm tóc trong ngày</li>
                                         <li>hoa cầm tay, phụ kiện cưới</li>
                                         <li>xe 16 chỗ trong ngày chụp</li>
+                                        <li>bao bữa ăn cho CDCR</li>
                                     </ul>
                                     (Gói đã bao gồm các chi phí đi lại giữa Đà Nẵng và Quy Nhơn, ăn ở khách sạn 1 đêm)
                                 </div>
