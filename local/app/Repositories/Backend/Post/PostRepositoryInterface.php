@@ -6,8 +6,6 @@ interface PostRepositoryInterface
 {
     public function getAllPostOrderById();
 
-    public function getPostById($id);
-
     public function showCreatePost();
 
     public function showEditPost($id);

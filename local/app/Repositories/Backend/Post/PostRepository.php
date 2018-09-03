@@ -19,13 +19,7 @@ class PostRepository extends EloquentRepository implements PostRepositoryInterfa
     {
         return $this->_model::where('post_type', '=', IS_POST)->orderBy('id', 'DESC')->get();
     }
-
-    public function getPostById($id)
-    {
-        return $this->find(id);
-    }
-
-
+    
     public function showCreatePost()
     {
         $data=[];
