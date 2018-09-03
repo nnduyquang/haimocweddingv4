@@ -29,7 +29,7 @@
             </ul>
         </div>
     @endif
-    {!! Form::model($post,array('route' => ['post.update',$post->id],'method'=>'PATCH')) !!}
+    {!! Form::model($data['post'],array('route' => ['post.update',$data['post']->id],'method'=>'PATCH')) !!}
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
@@ -41,7 +41,7 @@
                     <strong>Chuyên Mục</strong>
                     <select class="form-control" name="category_item_id">'
                         @foreach($data['dd_categorie_posts'] as $key=>$item) {
-                        @if($item['index']==$post->category_item_id)
+                        @if($item['index']==$data['post']->category_item_id)
                             <option value="{{$item['index']}}" selected>{{$item['value']}}</option>
                         @else
                             <option value="{{$item['index']}}">{{$item['value']}}</option>
@@ -57,8 +57,8 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <strong>Hình Đại Diện: </strong>
-                    @if($post->image!='')
-                        {!! Form::text('image', url('/').'/'.$post->image, array('class' => 'form-control','id'=>'pathImagePost')) !!}
+                    @if($data['post']->image!='')
+                        {!! Form::text('image', url('/').'/'.$data['post']->image, array('class' => 'form-control','id'=>'pathImagePost')) !!}
                     @else
                         {!! Form::text('image', '', array('class' => 'form-control','id'=>'pathImagePost')) !!}
                     @endif
@@ -66,8 +66,8 @@
                     {!! Form::button('Tìm', array('id' => 'btnBrowseImagePost','class'=>'btn btn-primary')) !!}
                 </div>
                 <div class="form-group">
-                    @if($post->image!='')
-                        {{ Html::image($post->image,'',array('id'=>'showHinhPost','class'=>'show-image'))}}
+                    @if($data['post']->image!='')
+                        {{ Html::image($data['post']->image,'',array('id'=>'showHinhPost','class'=>'show-image'))}}
                     @else
                         {{ Html::image('','',array('id'=>'showHinhPost','class'=>'show-image'))}}
                     @endif
@@ -83,7 +83,7 @@
                                 <th>Địa điểm chụp</th>
                             </tr>
                             @php
-                                $arrayID=$post->products()->get();
+                                $arrayID=$data['post']->products()->get();
                             @endphp
                             @foreach ($data['products'] as $key => $item)
                                 <tr>
@@ -116,31 +116,31 @@
                 <h3>SEO</h3>
                 <div class="content">
                     <div class="show-pattern">
-                        <span class="title">{{$post->seos->seo_title}}</span>
-                        <span class="link">{{URL::to('/')}}/{{$post->path}}</span>
-                        <span class="description">{{$post->seos->seo_description}}</span>
+                        <span class="title">{{$data['post']->seos->seo_title}}</span>
+                        <span class="link">{{URL::to('/')}}/{{$data['post']->path}}</span>
+                        <span class="description">{{$data['post']->seos->seo_description}}</span>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
                             <strong>Từ khóa cần SEO</strong>
-                            {!! Form::text('seo_keywords',$post->seos->seo_keywords, array('placeholder' => 'keywords cách nhau dấu phẩy','class' => 'form-control')) !!}
+                            {!! Form::text('seo_keywords',$data['post']->seos->seo_keywords, array('placeholder' => 'keywords cách nhau dấu phẩy','class' => 'form-control')) !!}
                             <ul class="error-notice">
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-12 form-group">
                         <strong>Tiêu Đề (title):</strong>
-                        {!! Form::text('seo_title',$post->seos->seo_title, array('placeholder' => 'Tên','class' => 'form-control')) !!}
+                        {!! Form::text('seo_title',$data['post']->seos->seo_title, array('placeholder' => 'Tên','class' => 'form-control')) !!}
                     </div>
                     <div class="col-md-12 form-group">
                         <strong>Mô Tả (description):</strong>
-                        {!! Form::textarea('seo_description',$post->seos->seo_description,array('placeholder' => '','id'=>'seo-description-post','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
+                        {!! Form::textarea('seo_description',$data['post']->seos->seo_description,array('placeholder' => '','id'=>'seo-description-post','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
                     </div>
                 </div>
             </div>
             <div class="col-md-12 form-group">
                 <strong>Kích Hoạt:</strong>
-                <input type="checkbox" {{$post->isActive==1?'checked':''}} value="false"  name="isActive" data-on="Có"
+                <input type="checkbox" {{$data['post']->isActive==1?'checked':''}} value="false"  name="isActive" data-on="Có"
                        data-off="Không"
                        data-toggle="toggle">
             </div>

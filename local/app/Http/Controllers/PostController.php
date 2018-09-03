@@ -66,9 +66,9 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        $post = $this->postRepository->getPostById($id);
-        $data=$this->postRepository->showEditPost();
-        return view('backend.admin.post.edit', compact('post', 'data'));
+//        $post = $this->postRepository->getPostById($id);
+        $data=$this->postRepository->showEditPost($id);
+        return view('backend.admin.post.edit', compact('data'));
     }
 
     /**

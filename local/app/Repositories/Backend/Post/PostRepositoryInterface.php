@@ -10,7 +10,7 @@ interface PostRepositoryInterface
 
     public function showCreatePost();
 
-    public function showEditPost();
+    public function showEditPost($id);
 
     public function createNewPostWithSeoId($request);
 

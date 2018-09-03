@@ -35,10 +35,11 @@ class PostRepository extends EloquentRepository implements PostRepositoryInterfa
         $data['dd_categorie_posts']=$dd_categorie_posts;
         $products=$product->getAllProductActiveOrderById();
         $data['products']=$products;
+
         return $data;
     }
 
-    public function showEditPost()
+    public function showEditPost($id)
     {
         $data=[];
         $category=new CategoryItem();
@@ -47,6 +48,8 @@ class PostRepository extends EloquentRepository implements PostRepositoryInterfa
         $data['dd_categorie_posts']=$dd_categorie_posts;
         $products=$product->getAllProductActiveOrderById();
         $data['products']=$products;
+        $post=$this->find($id);
+        $data['post']=$post;
         return $data;
     }
 
