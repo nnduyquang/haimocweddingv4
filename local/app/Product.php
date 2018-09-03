@@ -29,4 +29,7 @@ class Product extends Model
     {
         return $this->belongsToMany('App\Post', 'post_product', 'product_id', 'post_id')->withTimestamps();
     }
+    public function getAllProductActiveOrderById(){
+        return $this->where('isActive',ACTIVE)->orderBy('id','DESC')->get();
+    }
 }

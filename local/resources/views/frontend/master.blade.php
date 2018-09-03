@@ -44,7 +44,7 @@
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
-        <a href="tel:0962599482" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
+        <a href="tel:0902710212" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
                                                                             aria-hidden="true"></i></a>
     </div>
 </div>
@@ -52,7 +52,7 @@
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
-        <a href="tel:0962599482" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
+        <a href="tel:0902710212" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
                                                                             aria-hidden="true"></i></a>
     </div>
 </div>

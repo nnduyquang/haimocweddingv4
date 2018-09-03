@@ -39,12 +39,12 @@
 
                 <div class="form-group">
                     <strong>Chuyên Mục</strong>
-                    <select class="form-control" name="parent">'
-                        @foreach($dd_categorie_posts as $key=>$data) {
-                        @if($data['index']==$post->category_item_id)
-                            <option value="{{$data['index']}}" selected>{{$data['value']}}</option>
+                    <select class="form-control" name="category_item_id">'
+                        @foreach($data['dd_categorie_posts'] as $key=>$item) {
+                        @if($item['index']==$post->category_item_id)
+                            <option value="{{$item['index']}}" selected>{{$item['value']}}</option>
                         @else
-                            <option value="{{$data['index']}}">{{$data['value']}}</option>
+                            <option value="{{$item['index']}}">{{$item['value']}}</option>
                         @endif
                         @endforeach
                     </select>
@@ -85,17 +85,17 @@
                             @php
                                 $arrayID=$post->products()->get();
                             @endphp
-                            @foreach ($products as $key => $data)
+                            @foreach ($data['products'] as $key => $item)
                                 <tr>
-                                    @if(in_array($data->id,explode(',',$arrayID->implode('id',','))))
-                                        <td>{{Form::checkbox('id[]',$data->id,true)}}</td>
+                                    @if(in_array($item->id,explode(',',$arrayID->implode('id',','))))
+                                        <td>{{Form::checkbox('list_id[]',$item->id,true)}}</td>
                                     @else
-                                        <td>{{Form::checkbox('id[]',$data->id,false)}}</td>
+                                        <td>{{Form::checkbox('list_id[]',$item->id,false)}}</td>
                                     @endif
-                                    <td>{{$data->name}}</td>
-                                    <td>{{Html::image($data->image,'',array('class'=>'product-img'))}}</td>
+                                    <td>{{$item->name}}</td>
+                                    <td>{{Html::image($item->image,'',array('class'=>'product-img'))}}</td>
                                     @php
-                                        $arrayLocationItem=$data->locations()->get();
+                                        $arrayLocationItem=$item->locations()->get();
                                     @endphp
                                     <td>{{$arrayLocationItem->implode('name',',')}}</td>
                                 </tr>
@@ -140,9 +140,9 @@
             </div>
             <div class="col-md-12 form-group">
                 <strong>Kích Hoạt:</strong>
-                <input {{$post->isActive==1?'checked':''}}  name="post_is_active" data-on="Có"
+                <input type="checkbox" {{$post->isActive==1?'checked':''}} value="false"  name="isActive" data-on="Có"
                        data-off="Không"
-                       type="checkbox" data-toggle="toggle">
+                       data-toggle="toggle">
             </div>
             <div class="col-md-12" style="text-align:  center;">
                 <button id="btnDanhMuc" type="submit" class="btn btn-primary">Cập Nhật Bài Viết</button>

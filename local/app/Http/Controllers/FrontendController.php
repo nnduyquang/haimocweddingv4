@@ -19,22 +19,29 @@ class FrontendController extends Controller
         $data = $this->frontendRepository->getFrontend();
         return view('frontend.home.index', compact('data'));
     }
-
-    public function getAlbumDetail($path)
-    {
-        $data = $this->frontendRepository->getAlbumDetail($path);
-        return view('frontend.album.index', compact('data'));
-    }
-
     public function getPostDetail($path,$type)
     {
         $data = $this->frontendRepository->getPostDetail($path,$type);
         return view('frontend.post.index', compact('data'));
     }
 
-    public function getAllAlbum(){
+    public function getAllAlbum($type){
         $data = $this->frontendRepository->getAllAlbum();
-        return view('frontend.collection.index', compact('data'));
+        return view('frontend.collection.index', compact('data','type'));
+    }
+    public function getAlbumDetail($path)
+    {
+        $data = $this->frontendRepository->getAlbumDetail($path);
+        return view('frontend.album.index', compact('data'));
+    }
+    public function getAllPhongSu($type){
+        $data = $this->frontendRepository->getAllPhongSu();
+        return view('frontend.collection.index', compact('data','type'));
+    }
+    public function getPhongSuDetail($path,$type)
+    {
+        $data = $this->frontendRepository->getPhongSuDetail($path);
+        return view('frontend.album.index', compact('data','type'));
     }
     public function getPriceDetail($path){
         $data = $this->frontendRepository->getPriceDetail($path);

@@ -4,36 +4,55 @@
     </div>
     <div class="main-title">
         <div class="icon-title" style="background:url('{{URL::to('images/icon/gallry_icon2.png')}}')"></div>
-        <h1>Album</h1>
+        @if($type=='album')
+            <h1>Album</h1>
+        @else
+            <h1>Phóng Sự</h1>
+        @endif
         <div class="icon-title" style="background:url('{{URL::to('images/icon/garllry_icon1.png')}}')"></div>
     </div>
-    <div class="location">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 text-name">Khu Vực</div>
-                <div class="col-md-10">
-                    <ul class="list-location">
-                        @foreach($data['locations'] as $key=>$item)
-                            <li><a href="{{URL::to('dia-diem/'.$item->path)}}">{{$item->name}}</a></li>
-                        @endforeach
-                    </ul>
+    @if($type=='album')
+        <div class="location">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-name">Khu Vực</div>
+                    <div class="col-md-10">
+                        <ul class="list-location">
+                            @foreach($data['locations'] as $key=>$item)
+                                <li><a href="{{URL::to('dia-diem/'.$item->path)}}">{{$item->name}}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    @endif
     <div class="list-album">
         <div class="container">
             <div class="row">
                 @foreach($data['albums'] as $key=>$item)
                     <div class="col-md-4 mb-4">
                         <div class="card one-item h-100">
-                            <a class="img-item"
-                               href="{{URL::to('album/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>
-                            <div class="card-body plan-box">
-                                <div class="inner">
-                                    <h3 class="title"><a href="{{URL::to('album/huy-tram')}}">{{$item->name}}</a></h3>
+                            @if($type=='album')
+                                <a class="img-item"
+                                   href="{{URL::to('album/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>
+                                <div class="card-body plan-box">
+                                    <div class="inner">
+                                        <h3 class="title"><a
+                                                    href="{{URL::to('album/'.$item->path)}}">{{$item->name}}</a></h3>
+                                    </div>
                                 </div>
-                            </div>
+                            @else
+                                <a class="img-item"
+                                   href="{{URL::to('phong-su/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>
+                                <div class="card-body plan-box">
+                                    <div class="inner">
+                                        <h3 class="title"><a
+                                                    href="{{URL::to('phong-su/'.$item->path)}}">{{$item->name}}</a></h3>
+                                    </div>
+                                </div>
+                            @endif
+
                         </div>
                     </div>
                 @endforeach

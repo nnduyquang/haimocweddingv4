@@ -37,7 +37,7 @@
                 </div>
                 <div class="form-group">
                     <strong>Chuyên Mục</strong>
-                    {!! Form::select('parent',$dd_categorie_posts, null,array('class' => 'form-control')) !!}
+                    {!! Form::select('category_item_id',$data['dd_categorie_posts'], null,array('class' => 'form-control')) !!}
                 </div>
                 <div class="form-group">
                     <strong>Mô Tả Ngắn:</strong>
@@ -64,9 +64,9 @@
                                 <th>Hình đại diện</th>
                                 <th>Địa điểm chụp</th>
                             </tr>
-                            @foreach ($products as $key => $data)
+                            @foreach ($data['products'] as $key => $data)
                             <tr>
-                                <td>{{Form::checkbox('id[]',$data->id)}}</td>
+                                <td>{{Form::checkbox('list_id[]',$data->id)}}</td>
                                 <td>{{$data->name}}</td>
                                 <td>{{Html::image($data->image,'',array('class'=>'product-img'))}}</td>
                                 @php
@@ -114,7 +114,7 @@
         </div>
         <div class="col-md-12 form-group">
             <strong>Kích Hoạt:</strong>
-            <input name="post_is_active" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
+            <input name="isActive" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
         </div>
         <div class="col-md-12" style="text-align:  center;">
             <button id="btnDanhMuc" type="submit" class="btn btn-primary">Tạo Mới Bài Viết</button>

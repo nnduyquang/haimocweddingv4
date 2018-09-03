@@ -183,6 +183,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         App\Providers\MenuServiceProvider::class,
         App\Providers\FrontendServiceProvider::class,
+        App\Providers\PostServiceProvider::class,
 
     ],
 

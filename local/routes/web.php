@@ -10,8 +10,10 @@ Route::get('/lien-he', function () {
     return view('frontend.contact.index');
 });
 
-Route::get('/album/{path}', 'FrontendController@getAlbumDetail');
-Route::get('/album/', 'FrontendController@getAllAlbum');
+Route::get('/album/{path}', 'FrontendController@getAlbumDetail')->defaults('type','album');
+Route::get('/album/', 'FrontendController@getAllAlbum')->defaults('type','album');
+Route::get('/phong-su/{path}', 'FrontendController@getPhongSuDetail')->defaults('type','phong-su');
+Route::get('/phong-su/', 'FrontendController@getAllPhongSu')->defaults('type','phong-su');
 Route::get('/tin-tuc/{path}', 'FrontendController@getPostDetail')->defaults('type','tin-tuc');
 Route::get('/khuyen-mai', 'FrontendController@getPostDetail')->defaults('path','')->defaults('type','khuyen-mai');
 Route::post('/sendmail/send', ['as' => 'mail.send', 'uses' => 'MailController@send']);

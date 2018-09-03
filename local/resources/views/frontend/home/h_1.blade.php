@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-md-3 col-6">
                         <div class="one-item">
-                            <span class="days">5</span>
+                            <span class="days">5+</span>
                             <p class="time-count-down">năm kinh nghiệm</p>
                         </div>
                     </div>

@@ -35,7 +35,7 @@ class FrontendRepository implements FrontendRepositoryInterface
     {
         $data = [];
         $album = Product::where('path', $path)->first();
-        $order=Product::where('id','<>',$album->id)->where('isActive', ACTIVE)->orderBy('id','DESC')->take(8)->get();
+        $order=Product::where('id','<>',$album->id)->where('isActive', ACTIVE)->where('category_product_id',1)->orderBy('id','DESC')->take(8)->get();
         $listPrice=Post::where('category_item_id', 4)->get();
         foreach ($listPrice as $key=>$item)
         {
@@ -46,6 +46,23 @@ class FrontendRepository implements FrontendRepositoryInterface
         $data['listPrice']=$listPrice;
         return $data;
     }
+
+    public function getPhongSuDetail($path)
+    {
+        $data = [];
+        $album = Product::where('path', $path)->first();
+        $order=Product::where('id','<>',$album->id)->where('isActive', ACTIVE)->where('category_product_id',5)->orderBy('id','DESC')->take(8)->get();
+        $listPrice=Post::where('category_item_id', 4)->get();
+        foreach ($listPrice as $key=>$item)
+        {
+            $item->description = cat_chuoi_dai_thanh_ngan(loai_bo_html_tag($item->description), 200);
+        }
+        $data['order'] = $order;
+        $data['album'] = $album;
+        $data['listPrice']=$listPrice;
+        return $data;
+    }
+
 
     public function getPostDetail($path, $type)
     {
@@ -73,11 +90,20 @@ class FrontendRepository implements FrontendRepositoryInterface
     {
         $data = [];
         $locations = Location::all();
-        $albums = Product::where('isActive', ACTIVE)->get();
+        $albums = Product::where('isActive', ACTIVE)->where('category_product_id',1)->orderBy('id','DESC')->get();
         $data['locations'] = $locations;
         $data['albums'] = $albums;
         return $data;
     }
+
+    public function getAllPhongSu()
+    {
+        $data = [];
+        $albums = Product::where('isActive', ACTIVE)->where('category_product_id',5)->orderBy('id','DESC')->get();
+        $data['albums'] = $albums;
+        return $data;
+    }
+
 
     public function getPriceDetail($path)
     {

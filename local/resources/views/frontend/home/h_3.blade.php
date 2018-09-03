@@ -38,7 +38,7 @@
                 <div class="card one-item h-100">
                     <h4 class="title-service">QUAY PHIM PHÓNG SỰ</h4>
                     <div class="image-cover">
-                        <a href="#">
+                        <a href="{{URL::to('phong-su')}}">
                             {{ Html::image('images/temps/home/introduct3.jpg','',array('class'=>'')) }}
                         </a>
                     </div>
