@@ -34,13 +34,17 @@
                     <div class="col-md-4 mb-4">
                         <div class="card one-item h-100">
                             @if($type=='album')
-                                <a class="img-item"
-                                   href="{{URL::to('album/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>
-                                <div class="card-body plan-box">
-                                    <div class="inner">
-                                        <h3 class="title"><a
-                                                    href="{{URL::to('album/'.$item->path)}}">{{$item->name}}</a></h3>
-                                    </div>
+                                {{--<a class="img-item"--}}
+                                   {{--href="{{URL::to('album/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>--}}
+                                {{--<div class="card-body plan-box">--}}
+                                    {{--<div class="inner">--}}
+                                        {{--<h3 class="title"><a--}}
+                                                    {{--href="{{URL::to('album/'.$item->path)}}">{{$item->name}}</a></h3>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                <a class="img-item" style="background:url('{{URL::to($item->image)}}')" href="{{URL::to('album/'.$item->path)}}"></a>
+                                <div class="content">
+                                    <h4><a href="{{URL::to('album/'.$item->path)}}">{{$item->name}}</a></h4>
                                 </div>
                             @else
                                 <a class="img-item"

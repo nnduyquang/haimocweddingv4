@@ -1,6 +1,6 @@
 #co_1 {
-  .main-img{
-    img{
+  .main-img {
+    img {
       width: 100%;
     }
   }
@@ -25,7 +25,7 @@
     background-color: $main-color;
     padding: 20px 0;
     margin-bottom: 60px;
-    .text-name{
+    .text-name {
       color: white;
       border-right: 1px solid white;
       line-height: 2.5;
@@ -53,48 +53,67 @@
       border-radius: 10px 10px 10px 10px;
       box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
       transition: all 0.2s;
-      &:hover{
+      &:hover {
         transform: translate(0px, -25px);
         box-shadow: 0 10px 30px 0 rgba(58, 87, 135, 0.58);
       }
       a.img-item {
-        transition: all 0.2s;
         display: block;
-        height: auto;
-        overflow: hidden;
-        box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+        transition: all 1s;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        width: 100%;
+        height: 255px;
         border-radius: 10px 10px 0 0;
-        img {
-          height: auto;
-          width: 100%;
-          //padding: 5px;
+        box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+        //transition: all 0.2s;
+        //display: block;
+        //height: auto;
+        //overflow: hidden;
+        //box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+        //border-radius: 10px 10px 0 0;
+        //img {
+        //  height: auto;
+        //  width: 100%;
+        //  //padding: 5px;
+        //}
+      }
+      .content {
+        h4 {
+          text-align: center;
+          font-size: 24px;
+          padding: 20px 0;
+          a{
+            color: $main-color;
+          }
         }
       }
-      .plan-box{
+      .plan-box {
         //position: relative;
         z-index: 1;
         //width: 89.4736842105%;
         //margin: -40px auto 0;
         background-color: inherit;
         border-radius: 0 0 10px 10px;
-        &:before{
+        &:before {
           left: 5px;
           transform: rotate(-3deg);
         }
-        &:after{
+        &:after {
           right: 5px;
           transform: rotate(3deg);
         }
-        .inner{
+        .inner {
           position: relative;
           background: #fff;
           box-sizing: border-box;
           z-index: 2;
           border-radius: 0 0 10px 10px;
-          h3.title{
+          h3.title {
             padding: 20px;
             font-size: 24px;
-            a{
+            a {
               color: $main-color;
             }
           }
