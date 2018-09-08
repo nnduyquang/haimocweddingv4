@@ -60,7 +60,28 @@
     <a href="tel:0902710212" class="hotline-master"> 0902.710.212
     </a>
 </div>
+<!-- Global site tag (gtag.js) - AdWords: 869012961 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-869012961"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'AW-869012961');
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5b9292dfafc2c34e96e851a7/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 

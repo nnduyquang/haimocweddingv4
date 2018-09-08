@@ -8,7 +8,7 @@
         <div class="icon-title" style="background:url('{{URL::to('images/icon/garllry_icon1.png')}}')"></div>
     </div>
     <div class="container">
-        @include('frontend.home.h_10')
+        {{--@include('frontend.home.h_10')--}}
         <div class="album">
             @php
                 $subImage=explode(';',$data['album']->sub_image);
