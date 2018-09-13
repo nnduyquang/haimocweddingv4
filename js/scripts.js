@@ -3,6 +3,7 @@ var plugins = {
     sliderCarousel:$('.slider-carousel'),
     menuTop:$('#menu'),
     gridAlbum: $('.grid-album'),
+    gridCollection: $('.grid-collection'),
     h10PacketPriceCarousel:$('#h_10 .packet-price-carousel'),
     sendMail: $('#btnSendMail'),
     pr_1_DoRegister:$('#pr_1 .do-register')
@@ -45,6 +46,32 @@ $(document).ready(function () {
 
     function runGridAlbum() {
         var $grid = plugins.gridAlbum.masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-sizer'
+        });
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry();
+        });
+        var isOpen = true;
+        $('.choose-dd').click(function () {
+            if (isOpen) {
+                $('ul.ul-dd').addClass('open-dd');
+                $('.fa-plus').css('display','none');
+                $('.fa-minus').css('display','block');
+                isOpen = false;
+            } else {
+                $('ul.ul-dd').removeClass('open-dd');
+                $('.fa-plus').css('display','block');
+                $('.fa-minus').css('display','none');
+                isOpen = true;
+            }
+        });
+
+
+    }
+    function runGridCollection() {
+        var $grid = plugins.gridCollection.masonry({
             itemSelector: '.grid-item',
             percentPosition: true,
             columnWidth: '.grid-sizer'
@@ -231,6 +258,9 @@ $(document).ready(function () {
     $(".owl-nav .owl-next").html("<img src='images/temps/home/h10/red_next_btn.png' alt='Prev'/>");
     if(plugins.gridAlbum.length){
         runGridAlbum();
+    }
+    if(plugins.gridCollection.length){
+        runGridCollection();
     }
     if(plugins.sliderCarousel.length){
         runSliderCarousel();

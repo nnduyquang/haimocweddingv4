@@ -12,5 +12,6 @@
 
 @stop
 @section('container')
-    @include('frontend.collection.co_1')
+    {{--@include('frontend.collection.co_1')--}}
+    @include('frontend.collection.co_2')
 @stop
