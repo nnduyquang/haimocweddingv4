@@ -2,7 +2,7 @@
     <div id="carouselExampleControls" class="carousel slide carousel-fade slider-carousel" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="edit-slide slider1" style="background:url('{{URL::to('images/slider/slider2/slider4.jpg')}}')">
+                <div class="edit-slide slider1" style="background:url('{{URL::to('images/slider/slider2/slider5.jpg')}}')">
                     {{--{{ Html::image('images/slider/slider2/slider1.jpg','',array('class'=>'main-slider')) }}--}}
                     {{--<div class="container" style="position: relative">--}}
                         {{--<div class="test-slide center-text">--}}
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="edit-slide slider3" style="background:url('{{URL::to('images/slider/slider2/slider5.jpg')}}')">
+                <div class="edit-slide slider3" style="background:url('{{URL::to('images/slider/slider2/slider4.jpg')}}')">
                     {{--{{ Html::image('images/slider/slider2/slider3.jpg','',array('class'=>'main-slider')) }}--}}
                     {{--<div class="container" style="position: relative">--}}
                     {{--<div class="test-slide center-text">--}}

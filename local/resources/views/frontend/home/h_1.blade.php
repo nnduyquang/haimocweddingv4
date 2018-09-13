@@ -11,19 +11,19 @@
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="one-item">
-                            <span class="days">141+</span>
+                            <span class="days">1000+</span>
                             <p class="time-count-down">bộ album</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="one-item">
-                            <span class="days">250+</span>
+                            <span class="days">800+</span>
                             <p class="time-count-down">cặp đôi</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="one-item">
-                            <span class="days">10000+</span>
+                            <span class="days">600000+</span>
                             <p class="time-count-down">shot hình</p>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                 <div class="info-group">
                     <i class="far fa-heart"></i>
                     <div class="info">
-                        countdown to<br> <span> sea wedding</span> <br>wedding ceremony
+                        gói ưu đãi hấp dẫn<br> <span> đà nẵng - bà nà</span> <br>chỉ với 6.500.000
                     </div>
                 </div>
             </div>
