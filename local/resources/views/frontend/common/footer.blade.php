@@ -22,7 +22,7 @@
                     <span>kết nối với chúng tôi</span>
                 </h3>
                 <div class="social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/seachupanhcuoidep"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
