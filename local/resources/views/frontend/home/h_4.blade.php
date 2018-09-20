@@ -1,6 +1,6 @@
 <div id="h_4">
     <div class="col-md-12 p-0">
-        {{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}
+        {{--{{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}--}}
     </div>
     <h3 class="title">
         <p>HÃY ĐỂ CHÚNG TÔI LÀ MỘT PHẦN TRONG NGÀY TRỌN ĐẠI CỦA CỦA BẠN</p>
