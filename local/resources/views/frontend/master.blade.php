@@ -78,6 +78,16 @@
     <a href="tel:0902710212" class="hotline-master"> 0902.710.212
     </a>
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126238087-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126238087-1');
+</script>
+
 <!-- Global site tag (gtag.js) - AdWords: 869012961 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-869012961"></script>
 <script>
