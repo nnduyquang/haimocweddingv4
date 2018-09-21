@@ -1,4 +1,3 @@
-
 <div id="h_10">
     <h3 class="title">
         Our Story
@@ -10,8 +9,13 @@
 
                 </div>
             </div>
-            @for ($i = 0; $i < 4; $i++)
-
+            @php
+                    $i=1
+                    @endphp
+            @foreach($data['listPrice'] as $key=>$item)
+                @php
+                    $i=$i+1
+                @endphp
                 @if ($i%2>0)
                     <div class="row align-items-center mb-4 position-relative items">
                         <div class="fa-middle">
@@ -19,17 +23,14 @@
                         </div>
                         <div class="col-md-6 order-md-1 order-0">
                             <div class="img-content"
-                                 style="background-image:url({{URL::asset('http://sweetinz.agr8ho5txjpwv.maxcdn-edge.com/wp-content/uploads/2018/05/green-story_01.jpg')}});">
+                                 style="background-image:url({{URL::to($item->image)}});">
                             </div>
                         </div>
                         <div class="col-md-6  p-lg-5 p-5 text-lg-right text-left order-md-0 order-1">
-                            <h4 class="title text-lg-right text-left"><a href="{{URL::asset('uu-dai/chuong-trinh-uu-dai.html')}}">We
-                                    fall in love each other</a></h4>
-                            <span>30-01-2018</span>
+                            <h4 class="title text-lg-right text-left"><a href="{{URL::to('bang-gia/'.$item->path)}}">{{$item->title}}</a></h4>
+                            {{--<span>30-01-2018</span>--}}
                             <div class="text-lg-right text-left" style="width: 100%;">
-                                <p class="float-lg-right float-left">Ưu đãi voucher giảm 40% – 50% combo trang điểm +
-                                    làm tóc cô dâu từ
-                                    thương hiệu làm đẹp cao cấp.</p>
+                                <p class="float-lg-right float-left">{!! $item->description !!}</p>
                             </div>
                         </div>
                     </div>
@@ -41,22 +42,20 @@
                         </div>
                         <div class="col-md-6 text-left">
                             <div class="img-content"
-                                 style="background-image:url({{URL::asset('http://sweetinz.agr8ho5txjpwv.maxcdn-edge.com/wp-content/uploads/2018/05/green-story_02.jpg')}});">
+                                 style="background-image:url({{URL::to($item->image)}});">
                             </div>
                         </div>
                         <div class="col-md-6 p-5 p-lg-5 text-left">
 
-                            <h4 class="title text-left"><a href="{{URL::asset('uu-dai/chuong-trinh-uu-dai.html')}}">First
-                                    time we meet</a></h4>
-                            <span>30-01-2018    </span>
-                            <p>Ưu đãi voucher giảm 40% – 50% combo trang điểm + làm tóc cô dâu từ
-                                thương hiệu làm đẹp cao cấp.</p>
+                            <h4 class="title text-left"><a href="{{URL::to('bang-gia/'.$item->path)}}">{{$item->title}}</a></h4>
+                            {{--<span>30-01-2018    </span>--}}
+                            <p>{!! $item->description !!}</p>
 
                         </div>
                     </div>
                 @endif
 
-            @endfor
+            @endforeach
             <div id="bottom_circle">
                 <div class="inner">
 
