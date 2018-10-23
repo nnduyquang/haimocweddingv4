@@ -1,5 +1,6 @@
 //RESET CSS
 @import url('https://fonts.googleapis.com/css?family=Alex+Brush|Dancing+Script|Montserrat+Alternates');
+@import url('https://fonts.googleapis.com/css?family=K2D|Niramit|Pattaya|Philosopher');
 
 @font-face {
   font-family: UTMAVO;
@@ -21,7 +22,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+  //font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+  font-family: 'K2D', sans-serif!important;
 }
 
 //ol, ul {

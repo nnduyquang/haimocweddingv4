@@ -1,4 +1,4 @@
-<div id="h_4">
+<div id="h_4" class="pt-4 pb-4">
     <div class="col-md-12 p-0">
         {{--{{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}--}}
     </div>
