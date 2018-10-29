@@ -3,7 +3,7 @@
         {{--{{ Html::image('images/temps/home/we.jpg','',array('class'=>'img-intro')) }}--}}
     </div>
     <h3 class="title">
-        <p>HÃY ĐỂ CHÚNG TÔI LÀ MỘT PHẦN TRONG NGÀY TRỌN ĐẠI CỦA CỦA BẠN</p>
+        <p>HÃY ĐỂ CHÚNG TÔI LÀ MỘT PHẦN TRONG NGÀY TRỌNG ĐẠI CỦA BẠN</p>
         <span>ALBUM GALLERY</span>
     </h3>
     <div class="row no-gutters">
