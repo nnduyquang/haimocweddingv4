@@ -249,7 +249,7 @@ img {
 .mess_desk_bot {
   position: fixed;
   bottom: 58px;
-  right: 27px;
+  left: 68px;
   z-index: 2;
 }
 

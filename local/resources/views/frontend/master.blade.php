@@ -74,7 +74,7 @@
                                                                             aria-hidden="true"></i></a>
     </div>
 </div>
-<div class="callback d-none d-md-block" style="right: 150px;bottom: -30px;left:inherit">
+<div class="callback d-none d-md-block" style="left: -8px;bottom: -30px;right:inherit">
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
