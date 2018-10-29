@@ -194,6 +194,7 @@
             </a>
         </div>
         <div class="col-md-4 mb-3">
+            <a href="{{URL::to('chup-anh-family')}}">
             <div class="sv_banner" style="background-image:url({{URL::asset('images/banner/HAI_0285.JPG')}});">
                 <div class="border-top-bot"></div>
                 <div class="sv_content">
@@ -204,6 +205,7 @@
                     </div>
                 </div>
             </div>
+            </a>
         </div>
     </div>
 

@@ -19,4 +19,8 @@ interface FrontendRepositoryInterface
     public function getPhongSuDetail($path);
 
     public function getPriceDetail($path);
+
+    public function getAllFamily();
+
+    public function getFamilyDetail($path);
 }

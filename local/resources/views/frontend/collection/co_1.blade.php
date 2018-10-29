@@ -6,8 +6,10 @@
         <div class="icon-title" style="background:url('{{URL::to('images/icon/gallry_icon2.png')}}')"></div>
         @if($type=='album')
             <h1>Album</h1>
-        @else
+        @elseif($type=='phong-su')
             <h1>Phóng Sự</h1>
+        @else
+            <h1>Chụp Ảnh Family</h1>
         @endif
         <div class="icon-title" style="background:url('{{URL::to('images/icon/garllry_icon1.png')}}')"></div>
     </div>
@@ -46,13 +48,22 @@
                                 <div class="content">
                                     <h4><a href="{{URL::to('album/'.$item->path)}}">{{$item->name}}</a></h4>
                                 </div>
-                            @else
+                            @elseif($type=='phong-su')
                                 <a class="img-item"
                                    href="{{URL::to('phong-su/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>
                                 <div class="card-body plan-box">
                                     <div class="inner">
                                         <h3 class="title"><a
                                                     href="{{URL::to('phong-su/'.$item->path)}}">{{$item->name}}</a></h3>
+                                    </div>
+                                </div>
+                            @else
+                                <a class="img-item"
+                                   href="{{URL::to('chup-anh-family/'.$item->path)}}">  {{ Html::image($item->image,'',array('class'=>'')) }}</a>
+                                <div class="card-body plan-box">
+                                    <div class="inner">
+                                        <h3 class="title"><a
+                                                    href="{{URL::to('chup-anh-family/'.$item->path)}}">{{$item->name}}</a></h3>
                                     </div>
                                 </div>
                             @endif

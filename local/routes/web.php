@@ -14,6 +14,8 @@ Route::get('/album/{path}', 'FrontendController@getAlbumDetail')->defaults('type
 Route::get('/album/', 'FrontendController@getAllAlbum')->defaults('type','album');
 Route::get('/phong-su/{path}', 'FrontendController@getPhongSuDetail')->defaults('type','phong-su');
 Route::get('/phong-su/', 'FrontendController@getAllPhongSu')->defaults('type','phong-su');
+Route::get('/chup-anh-family/{path}', 'FrontendController@getFamilyDetail')->defaults('type','chup-anh-family');
+Route::get('/chup-anh-family/', 'FrontendController@getAllFamily')->defaults('type','chup-anh-family');
 Route::get('/tin-tuc/{path}', 'FrontendController@getPostDetail')->defaults('type','tin-tuc');
 Route::get('/khuyen-mai', 'FrontendController@getPostDetail')->defaults('path','')->defaults('type','khuyen-mai');
 Route::post('/sendmail/send', ['as' => 'mail.send', 'uses' => 'MailController@send']);
