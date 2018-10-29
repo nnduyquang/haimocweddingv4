@@ -33,7 +33,7 @@
                 <div class="info-group">
                     <i class="far fa-heart"></i>
                     <div class="info">
-                        gói ưu đãi hấp dẫn<br> <span> đà nẵng - bà nà</span> <br>chỉ với 6.500.000
+                        gói ưu đãi hấp dẫn<br> <span> đà nẵng - hội an</span> <br>chỉ với 7.900.000
                     </div>
                 </div>
             </div>
