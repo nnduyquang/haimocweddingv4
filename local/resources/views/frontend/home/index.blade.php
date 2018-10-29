@@ -18,7 +18,9 @@
     {{--@include('frontend.home.h_3')--}}
     @include('frontend.home.h_4')
     {{--@include('frontend.home.h_9')--}}
-    @include('frontend.home.h_10')
+    {{--@include('frontend.home.h_10')--}}
+    @include('frontend.home.h_14')
+    @include('frontend.home.h_13')
     @include('frontend.home.h_8')
     {{--@include('frontend.home.h_7')--}}
 @stop

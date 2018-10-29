@@ -96,6 +96,7 @@
         line-height: 22px;
         font-weight: bold;
         font-family: 'Philosopher', sans-serif!important;
+        /*font-family: 'Vollkorn', serif!important;*/
     }
 
     #h_12 .sv_banner .sv_content h5{
