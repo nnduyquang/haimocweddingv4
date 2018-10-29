@@ -155,20 +155,20 @@
                     <h4 class="title">
                         BÀI VIẾT <span>MỚI NHẤT</span>
                     </h4>
-                    @for ($i = 0; $i < 4; $i++)
+                    @foreach($listFrontEndInfo['news'] as $key=>$item)
 
                         <div class="d-flex align-items-center mb-3">
                             <div class="pr-2">
-                                <a href="">
+                                <a href="{{URL::to('tin-tuc/'.$item->path)}}">
                                     <div class="image"
-                                         style="background-image:url({{URL::asset('http://www.elle.vn/wp-content/uploads/2017/10/06/nhung-bo-anh-dep-nhu-mo-cua-sao-viet13-e1507278531118.jpg')}});">
+                                         style="background-image:url({{URL::to($item->image)}});">
                                     </div>
                                 </a>
                             </div>
-                            <h5><a href="">ĐÀ LẠT BẢN TÌNH CA THIÊN THANH LOUIS VS HARI</a></h5>
+                            <h5><a href="{{URL::to('tin-tuc/'.$item->path)}}">{{$item->title}}</a></h5>
                         </div>
 
-                    @endfor
+                    @endforeach
                 </div>
 
             </div>

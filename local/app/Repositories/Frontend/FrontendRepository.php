@@ -15,7 +15,7 @@ class FrontendRepository implements FrontendRepositoryInterface
         $albums = Product::where('isActive', ACTIVE)->where('is_hot',ACTIVE)->orderBy('order', 'ASC')->take(6)->get();
         $news = Post::where('category_item_id', 2)->orderBy('id', 'DESC')->take(4)->get();
         $promotion=Post::where('category_item_id', 3)->first();
-        $listPrice=Post::where('category_item_id', 4)->get();
+        $listPrice=Post::where('category_item_id', 4)->take(4)->get();
         foreach ($listPrice as $key=>$item)
         {
             $item->description = cat_chuoi_dai_thanh_ngan(loai_bo_html_tag($item->description), 200);
@@ -117,6 +117,8 @@ class FrontendRepository implements FrontendRepositoryInterface
     public function getFrontEndInfo()
     {
         $data = [];
+        $news = Post::where('category_item_id', 2)->orderBy('id', 'DESC')->take(4)->get();
+        $data['news'] = $news;
         return $data;
     }
 

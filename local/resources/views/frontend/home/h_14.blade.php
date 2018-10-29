@@ -96,20 +96,20 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h6>CÁC GÓI DỊCH VỤ ƯU ĐÃI</h6>
+                <h6>CÁC GÓI ĐANG ƯU ĐÃI</h6>
             </div>
 
-            @for ($i = 0; $i < 4; $i++)
+            @foreach($data['listPrice'] as $key=>$item)
 
             <div class="col-md-6 mb-4">
                 <div class="bg-dv">
-                    <img src="{{URL::asset('http://seawedding.net/images/price/14.jpg')}}" alt="">
+                    <img src="{{URL::to($item->image)}}" alt="">
                 </div>
-                <h5>GÓI ĐÀ NẴNG - BÀ NÀ</h5>
-                <h4>5.900.000</h4>
+                <h5><a href="{{URL::to('bang-gia/'.$item->path)}}">{{$item->title}}</a></h5>
+                {{--<h4>5.900.000</h4>--}}
             </div>
 
-            @endfor
+            @endforeach
             {{--<div class="col-md-6">--}}
                 {{--<div class="bg-dv">--}}
                     {{--<img src="{{URL::asset('http://beta.flockthemes.com/dove-wedding/demo1/wp-content/uploads/2017/05/parents-1.jpg')}}" alt="">--}}
