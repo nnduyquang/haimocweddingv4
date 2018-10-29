@@ -136,12 +136,12 @@
 
             <div class="col-md-3 text-center">
                 <div class="employee">
-                    <div class="img-emp" style="background-image:url({{URL::asset('images/nhanvien/nv_1.jpg')}});">
+                    <div class="img-emp" style="background-image:url({{URL::asset('images/nhanvien/nv_4.jpg')}});">
 
                     </div>
                 </div>
-                <h6>MINH HOÀNG</h6>
-                <p>Photographer</p>
+                <h6>HÙNG NGUYỄN</h6>
+                <p>Photoshop</p>
             </div>
             {{--@endfor--}}
 
