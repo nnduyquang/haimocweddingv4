@@ -104,7 +104,7 @@
 
                 <h5>AMAZING TEAM </h5>
             </div>
-            @for ($i = 0; $i < 2; $i++)
+            {{--@for ($i = 0; $i < 2; $i++)--}}
                 <div class="col-md-3 text-center">
                     <div class="employee">
                         <div class="img-emp" style="background-image:url({{URL::asset('images/nhanvien/nv_1.jpg')}});">
@@ -123,7 +123,27 @@
                     <h6>NGUYỄN HẢI</h6>
                     <p>Photographer</p>
                 </div>
-            @endfor
+
+            <div class="col-md-3 text-center">
+                <div class="employee">
+                    <div class="img-emp" style="background-image:url({{URL::asset('images/nhanvien/nv_3.jpg')}});">
+
+                    </div>
+                </div>
+                <h6>MY SA</h6>
+                <p>Make-up</p>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="employee">
+                    <div class="img-emp" style="background-image:url({{URL::asset('images/nhanvien/nv_4.jpg')}});">
+
+                    </div>
+                </div>
+                <h6>HÙNG NGUYỄN</h6>
+                <p>Photoshop</p>
+            </div>
+            {{--@endfor--}}
 
         </div>
     </div>
