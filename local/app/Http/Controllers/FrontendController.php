@@ -34,7 +34,7 @@ class FrontendController extends Controller
         $data = $this->frontendRepository->getAlbumDetail($path);
         return view('frontend.album.index', compact('data'));
     }
-    public function getAllPhongSu($type){
+    public function getAllPhongSu(){
         $data = $this->frontendRepository->getAllPhongSu();
         return view('frontend.collection.index', compact('data','type'));
     }
@@ -47,7 +47,7 @@ class FrontendController extends Controller
         $data = $this->frontendRepository->getPriceDetail($path);
         return view('frontend.d_price.index', compact('data'));
     }
-    public function getAllFamily(){
+    public function getAllFamily($type){
         $data = $this->frontendRepository->getAllFamily();
         return view('frontend.collection.index', compact('data','type'));
     }
