@@ -29,10 +29,10 @@ class FrontendController extends Controller
         $data = $this->frontendRepository->getAllAlbum();
         return view('frontend.collection.index', compact('data','type'));
     }
-    public function getAlbumDetail($path)
+    public function getAlbumDetail($path,$type)
     {
         $data = $this->frontendRepository->getAlbumDetail($path);
-        return view('frontend.album.index', compact('data'));
+        return view('frontend.album.index', compact('data','type'));
     }
     public function getAllPhongSu(){
         $data = $this->frontendRepository->getAllPhongSu();
