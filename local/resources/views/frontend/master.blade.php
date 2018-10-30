@@ -63,8 +63,10 @@
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
+
+    new WOW().init();
 </script>
-{{--@yield('scripts')--}}
+@yield('jv-scripts')
 {{ Html::script('js/scripts.js') }}
 <div class="callback d-lg-none d-md-none">
     <div class="phone_animation">
