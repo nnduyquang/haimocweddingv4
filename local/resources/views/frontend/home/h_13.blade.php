@@ -1,7 +1,7 @@
 <style>
     #h_13 {
         background-color: #f6f6f6;
-        padding-top: 58px;
+        padding-top: 1.5rem;
         padding-bottom: 68px;
     }
 
