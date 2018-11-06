@@ -107,6 +107,16 @@
 
     gtag('config', 'AW-869012961');
 </script>
+<!-- Global site tag (gtag.js) - Google Ads: 867696306 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-867696306"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-867696306');
+</script>
+
 {{--<!--Start of Tawk.to Script-->--}}
 {{--<script type="text/javascript">--}}
     {{--var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();--}}
