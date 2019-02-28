@@ -1,7 +1,6 @@
 <style>
     #h_14{
         padding-top: 38px;
-        padding-bottom: 58px;
     }
 
     #h_14 h6{

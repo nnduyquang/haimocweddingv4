@@ -33,14 +33,14 @@
 
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VI/sdk.js#xfbml=1&version=v3.1';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+{{--<div id="fb-root"></div>--}}
+{{--<script>(function(d, s, id) {--}}
+        {{--var js, fjs = d.getElementsByTagName(s)[0];--}}
+        {{--if (d.getElementById(id)) return;--}}
+        {{--js = d.createElement(s); js.id = id;--}}
+        {{--js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';--}}
+        {{--fjs.parentNode.insertBefore(js, fjs);--}}
+    {{--}(document, 'script', 'facebook-jssdk'));</script>--}}
 <header id="header">
 
 </header>
@@ -63,8 +63,10 @@
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
+
+    new WOW().init();
 </script>
-{{--@yield('scripts')--}}
+@yield('jv-scripts')
 {{ Html::script('js/scripts.js') }}
 <div class="callback d-lg-none d-md-none">
     <div class="phone_animation">
@@ -105,6 +107,16 @@
 
     gtag('config', 'AW-869012961');
 </script>
+<!-- Global site tag (gtag.js) - Google Ads: 867696306 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-867696306"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-867696306');
+</script>
+
 {{--<!--Start of Tawk.to Script-->--}}
 {{--<script type="text/javascript">--}}
     {{--var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();--}}

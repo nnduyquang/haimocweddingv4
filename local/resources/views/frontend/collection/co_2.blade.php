@@ -14,20 +14,20 @@
         <div class="icon-title" style="background:url('{{URL::to('images/icon/garllry_icon1.png')}}')"></div>
     </div>
     @if($type=='album')
-        <div class="location">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 text-name">Khu Vực</div>
-                    <div class="col-md-10">
-                        <ul class="list-location">
-                            @foreach($data['locations'] as $key=>$item)
-                                <li><a href="{{URL::to('dia-diem/'.$item->path)}}">{{$item->name}}</a></li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{--<div class="location">--}}
+        {{--<div class="container">--}}
+        {{--<div class="row">--}}
+        {{--<div class="col-md-2 text-name">Khu Vực</div>--}}
+        {{--<div class="col-md-10">--}}
+        {{--<ul class="list-location">--}}
+        {{--@foreach($data['locations'] as $key=>$item)--}}
+        {{--<li><a href="{{URL::to('dia-diem/'.$item->path)}}">{{$item->name}}</a></li>--}}
+        {{--@endforeach--}}
+        {{--</ul>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
     @endif
     <div class="list-album">
         <div class="container-fluid">
@@ -37,12 +37,12 @@
                         @foreach($data['albums'] as $key=>$item)
                             <div class="grid-item">
                                 @if($type=='album')
-                                <a class=""
-                                   href="{{URL::to('album/'.$item->path)}}">
-                                    <div class="border-hover">
+                                    <a class=""
+                                       href="{{URL::to('album/'.$item->path)}}">
+                                        <div class="border-hover">
 
-                                        {{ Html::image($item->image,'',array('class'=>'')) }}
-                                        <div class="title">{{$item->name}}</div>
+                                            {{ Html::image($item->image,'',array('class'=>'')) }}
+                                            <div class="title">{{$item->name}}</div>
 
                                     </div>
                                 </a>
