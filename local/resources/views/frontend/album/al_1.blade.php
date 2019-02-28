@@ -36,9 +36,19 @@
                 <div class="col-md-3 mb-4">
                     <div class="card one-item h-100">
                         <div class="img-cover">
+                            @if($type=='album')
                             <a href="{{URL::to('album/'.$item->path)}}">
                                 {{ Html::image($item->image,'',array('class'=>'')) }}
                             </a>
+                            @elseif($type=='phong-su')
+                                <a href="{{URL::to('phong-su/'.$item->path)}}">
+                                    {{ Html::image($item->image,'',array('class'=>'')) }}
+                                </a>
+                            @else
+                                <a href="{{URL::to('chup-anh-family/'.$item->path)}}">
+                                    {{ Html::image($item->image,'',array('class'=>'')) }}
+                                </a>
+                            @endif
                         </div>
                         <div class="card-body">
                             <span class="title">{{$item->name}}</span>

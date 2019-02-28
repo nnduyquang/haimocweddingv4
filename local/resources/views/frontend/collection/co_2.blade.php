@@ -6,8 +6,10 @@
         <div class="icon-title" style="background:url('{{URL::to('images/icon/gallry_icon2.png')}}')"></div>
         @if($type=='album')
             <h1>Album</h1>
-        @else
+        @elseif($type=='phong-su')
             <h1>Phóng Sự</h1>
+        @else
+            <h1>Chụp Ảnh Family</h1>
         @endif
         <div class="icon-title" style="background:url('{{URL::to('images/icon/garllry_icon1.png')}}')"></div>
     </div>
@@ -44,9 +46,19 @@
 
                                     </div>
                                 </a>
-                                @else
+                                @elseif($type=='phong-su')
                                     <a class=""
                                        href="{{URL::to('phong-su/'.$item->path)}}">
+                                        <div class="border-hover">
+
+                                            {{ Html::image($item->image,'',array('class'=>'')) }}
+                                            <div class="title">{{$item->name}}</div>
+
+                                        </div>
+                                    </a>
+                                @else
+                                    <a class=""
+                                       href="{{URL::to('chup-anh-family/'.$item->path)}}">
                                         <div class="border-hover">
 
                                             {{ Html::image($item->image,'',array('class'=>'')) }}
